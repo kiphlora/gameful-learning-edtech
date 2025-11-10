@@ -1,0 +1,116 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: linear-gradient(0.25turn, #52a7cc, #22495a);
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    font-family: monospace;
+}
+
+header {
+    background: linear-gradient(0.25turn, #ffed4a, #a79600);
+    padding: 1rem 2rem;
+    margin: 1rem;
+    border-radius: 60px 10px;
+    box-shadow: 5px 5px 1px 1px #000;
+    line-height: 1.2;
+}
+
+.hero-header h2 {
+    margin-top: -10px;
+    color: #333333;
+    
+}
+
+.act {
+    background-color: #f5efb5;
+    padding: 1rem 2rem 1rem 2rem;
+    margin: 1rem;
+    border-radius: 60px 10px;
+}
+
+.sdt-list {
+    font-size: 1rem;
+}
+
+table {
+    table-layout: fixed;
+    width: 90%;
+    margin: 10px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 0.6em;
+}
+
+tbody > tr {
+    text-align: right;
+}
+
+.pill {
+    color: #ffffff;
+    border: 3px solid #f5efb5;
+}
+table tbody .pill {
+    background-color: #2b586b;
+    border-radius: 100px;
+    text-align: center;
+}
+
+table thead .pill {
+    background-color: #488eaa;
+    border-radius: 100px;
+    text-align: center;
+}
+
+
+/* New way, where the cells appear as is */
+table td {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    background-color: #a7960022;
+    border: 3px solid #f5efb5;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+table td:hover {
+    background-color: #a7960055;
+    transition:
+        background-color 0.1s;
+}
+
+td.checked {
+    background-color: #c5b100;
+    background-image: url('../assets/icons/checkbox-icon.svg');
+    background-size: 20%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+hr {
+    height: 1px;
+    margin: 2rem;
+    background-color: #488eaa;
+    border: none;
+}
+
+footer {
+    background: linear-gradient(0.25turn, #ffed4a, #a79600);
+    padding: 1rem 2rem;
+    margin: 1rem;
+    border-radius: 60px 10px;
+    /* box-shadow: 20px -10px #000000; */
+    box-shadow: 5px 5px 1px 1px #000;
+    line-height: 1.2;
+}
