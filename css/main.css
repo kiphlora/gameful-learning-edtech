@@ -88,14 +88,14 @@ table td {
     background-color: #a7960022;
     border: 3px solid #f5efb5;
     border-radius: 100px;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
-table td:hover {
+/* table td:hover {
     background-color: #a7960055;
     transition:
         background-color 0.1s;
-}
+} */
 
 td.checked {
     background-color: #c5b100;
