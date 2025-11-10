@@ -15,6 +15,13 @@ h1, h2 {
     font-family: monospace;
 }
 
+.keyword {
+    border-radius: 100px;
+    padding: 2px 8px;
+    background-color: #488eaa;
+    color: white;
+}
+
 header {
     background: linear-gradient(0.25turn, #ffed4a, #a79600);
     padding: 1rem 2rem;
