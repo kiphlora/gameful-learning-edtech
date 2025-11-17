@@ -1,17 +1,20 @@
+
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background: linear-gradient(0.25turn, #52a7cc, #22495a);
+    background: 
+        linear-gradient(0.25turn, #52a7ccdd, #3c7f9c99),
+        url(https://static.tumblr.com/maopbtg/a5emgtoju/inflicted.png) repeat;
     max-width: 800px;
     margin: 0 auto;
     line-height: 1.6;
+    /* background-size: 5px 5px; */
 }
-
 p {
     font-size: 1rem;
     line-height: 1.6;
 }
 
-h1, h2 {
+h1, h2, h3, h4 {
     font-family: monospace;
 }
 
@@ -121,3 +124,248 @@ footer {
     box-shadow: 5px 5px 1px 1px #000;
     line-height: 1.2;
 }
+
+/* Game Mechanics section */
+/* .gm-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 15px 0 15px 0;
+    align-items: center;
+    justify-content: center;
+} */
+
+.gm-choice-box {
+    padding: 5px 0 5px 0;
+    width: 20%;
+    border: 1px solid #97937100;
+    border-right: 5px solid #22495a;
+    background-color: #97937122;
+    border-radius: 10px;
+    margin: 0;
+    margin-right: 5px;
+    
+}
+.gm-anchor {
+    /* width: 100%; */
+    margin: 10px 5px;
+}
+.gm-span {
+    background-color: #22495a;
+    cursor: pointer;
+    border-radius: 100px;
+    padding: 5px 10px;
+    transition: 
+        background-color 0.1s;
+}
+
+.gm-span a {
+    text-decoration: none;
+    color: white;
+}
+
+.gm-span:hover {
+    background-color: #3c7b96;
+    transition: 
+        background-color 0.2s;
+}
+
+.gm-box {
+    width: 100%;
+    display: flex;
+}
+
+.gm-card-box {
+    /* border: 1px solid #a79600; */
+    border-left: 5px solid #a79600;
+    background-color: #97937122;
+    border-radius: 10px;
+    padding: 0 10px;
+    margin: 0;
+    margin-left: 5px;
+    width: 80%;
+    box-shadow: 5px 5px 0px 0px #000;
+}
+
+/* Tab styling - Autonomy, Competence, Relatedness tab sections */
+/* .gm-tab-bar is the overall bar containing the tab buttons */
+.gm-tab-bar {
+    display: flex;
+    /* margin: 10px; */
+    margin-top: 10px;
+}
+
+.gm-tab-bar button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    /* border: 1px solid #aaaaaa; */
+    border-bottom: 3px solid #aaaaaa;
+    background-color: #eeeeee;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.gm-tab-bar button:hover {
+    /* border-bottom: 3px solid #52a7cc; */
+    background-color: #dddddd;
+}
+
+.gm-tab {
+    border-radius: 10px;
+    /* padding: 10px 30px 10px 30px; */
+    padding: 10px 0px 10px 0px;
+    display: none;
+    /* background-color: #e4dc99; */
+    /* border-left: 5px solid #a79600; */
+}
+
+/* .gm-tab is the content within the tab */
+.gm-tab.active {
+    display: block;
+    
+}
+
+/* .gm-tab-option is the tab button itself */
+.gm-tab-option.active {
+    background-color: #e0ca03;
+    border-bottom: 3px solid #52a7cc;
+    font-weight: bold;
+}
+
+.gm-tab-option.active:hover {
+    background-color: #c2af01;
+}
+
+.gm-intro {
+    border-radius: 10px;
+    /* padding: 10px 20px 20px 20px; */
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #eeeeee;
+    border-left: 5px solid #bbbbbb;
+}
+
+.gm-reflection {
+    border-radius: 10px;
+    /* padding: 10px 20px 20px 20px; */
+    padding: 20px;
+    margin: 10px 0px;
+    background-color: #00836233;
+    border-left: 5px solid #008362;
+}
+
+.gm-recipe {
+    border-radius: 10px;
+    /* padding: 10px 20px 20px 20px; */
+    padding: 20px;
+    background-color: #003c8a33;
+    border-left: 5px solid #003c8a;
+    margin-bottom: 20px;
+}
+
+.gm-meaningful {
+    border-radius: 10px;
+    /* padding: 10px 20px 20px 20px; */
+    padding: 20px;
+    margin: 10px 0px;
+    background-color: #d8a60033;
+    border-left: 5px solid #d8a600;
+}
+
+.gm-shallow {
+    border-radius: 10px;
+    /* padding: 10px 20px 20px 20px; */
+    padding: 20px;
+    margin: 10px 0px;
+    background-color: #49008d33;
+    border-left: 5px solid #49008d;
+}
+
+.dashed-break {
+    margin: 20px -20px;
+    border-top: 5px dashed #488eaa;
+    background-color: transparent;
+}
+
+.gm-title {
+    /* text-decoration: wavy;
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #3c7b96; */
+    background-color: #2b586b;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+#act-V-gm-links {
+    display: flex;
+    align-items: center;
+    flex-flow: wrap;
+}
+
+#act-V-gm-links a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 10px;
+    background-color: #2b586b;
+}
+
+#act-V-gm-links a:hover {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 10px;
+    background-color: #3c7b96;
+}
+
+.shallow-tag {
+    border-radius: 100px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    margin: 10px 0px;
+    background-color: #49008d33;
+    color: #49008d;
+}
+
+.meaningful-tag {
+    border-radius: 100px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    margin: 10px 0px;
+    background-color: #d8a60055;
+    color: #8d6c00;
+}
+
+.reflection-tag {
+    border-radius: 100px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    margin: 10px 0px;
+    background-color: #00836244;
+    color: #003f2f;
+}
+
+.recipe-tag {
+    border-radius: 100px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    margin: 10px 0px;
+    background-color: #003c8a33;
+    color: #001e44;
+}
+
+
+
+
+

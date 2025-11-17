@@ -19,9 +19,9 @@
         <h2>How Meaningful Choices Motivate</h2>
         <p class="author-info">By Brett Moran</p>
     </header>
-
     <!-- Main body of the explorable -->
     <main id="explorable">
+        <!-- Act I -->
         <section class="act act-I">
             <h2>Act I - The Magic of Games</h2>
             <p>
@@ -40,6 +40,7 @@
                 It's these feelings &dash; <span class="autonomy-name keyword">autonomy</span>, <span class="competence-name keyword">competence</span>, and <span class="relatedness-name keyword">relatedness</span> &dash; that form the foundations of <em>motivation</em>.
             </p>
         </section>
+        <!-- Act II -->
         <section class="act act-II">
             <h2>Act II - The Psychology of Motivation</h2>
             <p>
@@ -57,6 +58,7 @@
                 On the other hand, when these needs are not met, engagement becomes shallow and more externally focused. In other words, when people feel <em>enough</em> autonomy, competence, and relatedness, they develop <span class="intrinsic-motivation">intrinsic motivation</span>, where they enjoy the activity for the sake of the activity. However, when they don't, they are more likely to develop <span class="extrinsic-motivation">extrinsic motivation</span>, which still gets them to do the activity, but only (or primarily) for the reward offered during or after completion.
             </p>
         </section>
+        <!-- Act III -->
         <section class="act act-III">
             <h2>Act III - Gamification versus Gamefulness</h2>
             <p>
@@ -89,6 +91,7 @@
                 </li>
             </ul>
         </section>
+        <!-- Act IV -->
         <section class="act act-IV">
             <h2>Act IV - Bridging Games, Learning, and Motivation</h2>
             <p>
@@ -99,6 +102,9 @@
             </p>
             <p>
                 In the next Act, you'll get to explore the <b>game mechanics</b> in any order.
+            </p>
+            <p>
+                🚧 <em>Note that the features to explore the game mechanics in any order and to activate the checkbox matrix upon completing a game mechanic section are still under construction - Coming soon</em> 🚧
             </p>
             <hr class="horizontal-sep">
             <table>
@@ -167,16 +173,1272 @@
                 </tbody>
             </table>
         </section>
+        <!-- Act V -->
         <section class="act act-V">
             <h2>Act V - Implementing Game Mechanics</h2>
             <p>
-                Select one of the game mechanics below to see information about it:
+                Select one of the game mechanics below to see more information about it:
             </p>
             <p>
-                🚧 Section under construction - Coming soon 🚧
+                🚧 <em>Section under construction - Coming soon </em> 🚧
             </p>
-            
+            <div id="act-V-gm-links">
+                <a href="#gm-points">Points</a>
+                <a href="#gm-badges">Badges</a>
+                <a href="#gm-progression">Progression</a>
+                <a href="#gm-story">Story</a>
+                <a href="#gm-co-design">Co-design</a>
+                <a href="#gm-collaboration">Collaboration</a>
+                <a href="#gm-competition">Competition</a>
+                <a href="#gm-roleplay">Roleplay</a>
+            </div>
         </section>
+        <!-- Points section -->
+        <section id="gm-points" class="act act-V gm-points">
+            <h2>Game Mechanic: <span class="gm-title">Points</span></h2>
+            <!-- Intro to Points section -->
+             <div class="gm-intro">
+                <p>
+                    <b>Points are numerical representations of progress.</b>
+                </p>
+             </div> 
+             <p>
+                In the world of education, points are often used as a way of attaching <em>numerical value</em> to certain tasks to indicate difficulty or to encourage/require participation.
+            </p>
+            <p>
+                In games, <b>points</b> are a very commonly used mechanic. Most often they are coupled with <b>competition</b> to determine overall winners using the accumulation of points earned through various in-game actions. A common implementation is the <em>High Score</em>, more common in older video games and arcade games. High scores are  essentially a form of <em>Leaderboard</em>.
+            </p>            
+             <!-- <hr class="dashed-break"> -->
+             <h2>Using Points to Address SDT Needs</h2>
+            <!-- Tab bar -->
+            <div class="gm-tab-bar">
+                <!-- Tab buttons -->
+                <button class="gm-tab-option active" onclick="gmsdtTabSwitch(event, 'gm-points-tab', 'gm-points-autonomy')">Autonomy</button>
+                <button class="gm-tab-option" onclick="gmsdtTabSwitch(event, 'gm-points-tab', 'gm-points-competence')">Competence</button>
+                <button class="gm-tab-option" onclick="gmsdtTabSwitch(event, 'gm-points-tab', 'gm-points-relatedness')">Relatedness</button>
+            </div>
+            <!-- Autonomy tab content section -->
+            <div id="gm-points-autonomy" class="gm-points-tab gm-tab active">
+                <h2>Autonomy</h2>
+                <p>
+                    Let's consider how this very common mechanic connects to the self-determination theory need of autonomy. When it comes to autonomy, the key is <em>choice</em>, so <b>points</b> need to represent some kind of meaningful decision. Here are some examples of both meaningful and shallow implementations you can try out.
+                </p>
+                <div class="gm-meaningful">
+                    <span class="meaningful-tag">Meaningful Implementation</span>
+                    <p>
+                        One way to implement meaningful choice into points is through allowing learners to <em>select from a menu of challenges, each with different point values related to their difficulty or required skill</em>.  
+                    </p>
+                </div>
+                <div class="gm-shallow">
+                     <span class="shallow-tag">Shallow Implementation</span>
+                    <p>
+                        In essence, the absense of choice is what makes an approach shallow. These are already commonly used when it comes to <em>required assessments</em> that have point values assigned by the educator and there's no choice given to the learner about the assignment's weight, the type of assignment, the skills assessed, or other aspects of the assignment.
+                    </p>
+                </div>
+                <div class="gm-reflection">
+                    <span class="reflection-tag">Reflection</span>
+                    <ul>
+                        <li>
+                            How do learners have control over how they earn points?
+                        </li>
+                        <li>
+                            What do points represent to the learners? Are they useable? If so, for what?
+                        </li>
+                        <li>
+                            How might the required competencies be met while allowing students to personalize their learning?
+                        </li>
+                    </ul>
+                </div> 
+            </div>
+            <!-- Competence tab content section -->
+            <div id="gm-points-competence" class="gm-points-tab gm-tab">
+                <h2>Competence</h2>
+                <p>
+                    Let's ponder how points connect to the next need: competence. When it comes to competence, the essential focus is on <em>growth</em>, and eventually <em>mastery</em> in the skill or topic. <b>Points</b> need to represent progress toward that goal of mastery. Let's look at a meaningful versus shallow implementation of points with respect to competence.
+                </p>
+                <div class="gm-meaningful">
+                    <span class="meaningful-tag">Meaningful Implementation</span>
+                    <p>
+                        One way to use points is as a marker for progression as the learners develop and practice certain skills. The keys here are ensuring that the points feel connected to the development, so the learners can see their progress in mastering particular skills. A simple visual representation for this is a <em>progress bar</em>, which quickly provides feedback about where they started, where they're going, and how far along they are right now. Different progress bars for different skills can provide quick feedback about the state of their learning.
+                    </p>
+                </div>
+                <div class="gm-shallow">
+                    <span class="shallow-tag">Shallow Implementation</span>
+                    <p>
+                        On the other hand, an example of a shallow implementation is one where the points don't really matter and act as tiny rewards. If they don't mark mastery, then points run the risk of becoming arbitrary and meaningless. They may still motivate some learners because the incentive structure is still there, but could undermine the goal; learners face challenges and complete tasks for the quick hit of dopamine rather than as a way to develop their skills.
+                    </p>
+                </div>
+                <div class="gm-reflection">
+                    <span class="reflection-tag">Reflection</span>
+                    <ul>
+                        <li>
+                            How might points be used to scaffold one of your lessons or units?
+                        </li>
+                        <li>
+                            From the perspective of one of your learners, what do you believe is likely to happen if you assign too many or too few points to different assignments? How might you balance them?
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Relatedness tab content section -->
+            <div id="gm-points-relatedness" class="gm-points-tab gm-tab">
+                <h2>Relatedness</h2>
+                <p>
+                    We already mentioned it a little earlier, but now let's dive into how points might connect to the need of relatedness. When it comes to relatedness, <em>connection</em> is key. <b>Points</b> need to bring learners together or allow learners to feel like they are contributing to something larger than themselves. Here are some examples of meaningful and shallow implementation that you can experiment with.
+                </p>
+                <div class="gm-meaningful">
+                    <span class="meaningful-tag">Meaningful Implementation</span>
+                    <p>
+                        Like in the <em>Harry Potter</em> series, perhaps learners' earned points could contribute to a shared collection for their group (or the entire classroom). The implementation is critical, however, since <em>competition</em> between groups could lead to <em>shame</em> for learners who don't or can't contribute as much as others. The culture of the classroom matters greatly, and as such, any inclusion of points needs to be considered carefully.
+                    </p>
+                </div>
+                <div class="gm-shallow">
+                    <span class="shallow-tag">Shallow Implementation</span>
+                    <p>
+                        Points that are allocated only to individuals or for individual purposes can undermine relatedness, and can lead, intentionally or unintentionally, to comparisons between learners, often creating or reinforcing inequalities. This doesn't always happen, but the potential is there and needs to be considered when experimenting with points.
+                    </p>
+                    <p>
+                        Leaderboards that show the progress of learners can embarrass those toward the lower end, especially if there are inequities that have not been addressed.
+                    </p>
+                </div>
+                <div class="gm-reflection">
+                    <span class="reflection-tag">Reflection</span>
+                    <ul>
+                        <li>
+                            How might you incorporate points in a way that reinforce collective progress?
+                        </li>
+                        <li>
+                            How might you mitigate some of the challenges involved with both shared points and individual points when it comes to social dynamics in your own learning environment?
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+            <hr class="dashed-break">
+            <h2>Non-Digital Recipe Using Points</h2>
+            <div class="gm-recipe">
+                <span class="recipe-tag">Recipe</span>
+                <p>
+                    <b>The Effort Economy</b>
+                </p>
+                <p>
+                    Materials Required:
+                    <ul>
+                        <li>
+                            Worksheets for your lessons
+                        </li>
+                        <li>
+                            Progress Board for each group
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    In your classroom, to activate <b>autonomy</b>, provide a variety of worksheet options to each learner, focusing on one or more skills. To satisfy <b>competence</b>, assign point values to each worksheet based on difficulty. Then, to activate <b>relatedness</b>, allow the learners, upon completing the worksheet, to choose to keep the points for themselves to spend on individual rewards, or to contribute the points to their group or to the classroom overall for larger, collective rewards instead.
+                </p>
+            </div>
+        </section>
+        <!-- Badges section -->
+        <section id="gm-badges" class="act act-V gm-badges">
+            <h2>Game Mechanic: <span class="gm-title">Badges</span></h2>
+            <!-- Intro to Badges section -->
+             <div class="gm-intro">
+                <p>
+                    <b>Badges are qualitative markers that represent milestones.</b>
+                </p>
+             </div> 
+             <p>
+                They function similar to points, but are categorical rather than numerical. One benefit of badges is that they have more symbolic meaning than points, which are more likely to feel arbitrary. This ties into another benefit of badges, which is their flexibility. Not only can badges be earned through point accumulation (if desired), but learners can acquire them through non-points methods, too, such as helping other learners, or through more personalized ways like "Most Improved" or "Peer Recognized" or "Creative Problem Solver". In terms of drawbacks, much like with points, if they are overused or aren't attached to meaningful milestones, then they can lead to extrinsic motivation.
+            </p>
+            <p>
+                In games, badges are one of the most common mechanics used. Many games use them as meta-game extras for those focusing on completion or who want bragging rights for accomplishing a particularly arduous achievement.
+            </p>
+            <p>
+                But badges appear in the non-digital world, as well. Belt ranks or colors in martial arts often indicate the skill level and a form of mastery. Merit badges express specific accomplishments or skills.
+            </p>
+             <!-- <hr class="dashed-break"> -->
+             <h2>Using Badges to Address SDT Needs</h2>
+            <!-- Tab bar -->
+            <div class="gm-tab-bar">
+                <!-- Tab buttons -->
+                <button class="gm-tab-option active" onclick="gmsdtTabSwitch(event, 'gm-badges-tab', 'gm-badges-autonomy')">Autonomy</button>
+                <button class="gm-tab-option" onclick="gmsdtTabSwitch(event, 'gm-badges-tab', 'gm-badges-competence')">Competence</button>
+                <button class="gm-tab-option" onclick="gmsdtTabSwitch(event, 'gm-badges-tab', 'gm-badges-relatedness')">Relatedness</button>
+            </div>
+            <!-- Autonomy tab content section -->
+            <div id="gm-badges-autonomy" class="gm-badges-tab gm-tab active">
+                <h2>Autonomy</h2>
+                <p>
+                    Now, let's consider how this very common mechanic connects to the self-determination theory need of autonomy. When it comes to autonomy, the key is <em>choice</em>, so <b>badges</b> need to represent some kind of meaningful decision.
+                </p>
+                <div class="gm-meaningful">
+                    <span class="meaningful-tag">Meaningful Implementation</span>
+                    <p>
+                        Given autonomy's requirement of choice, a meaningful implementation might be allowing a learner to create the design or name of the badge, as well as have some say in either which ones to pursue or how each badge might be earned (within the parameters set by the educator). Badges are best when they attach to challenges that "go above and beyond" or "take a unique approach". And allowing learners to make their own badges (within guidelines) may make a teacher's job a little easier than if the instructor were to design all the content themselves.
+
+                    </p>
+                </div>
+                <div class="gm-shallow">
+                    <span class="shallow-tag">Shallow Implementation</span>
+                    <p>
+                        Connected to choice is a sense of independence and personalization. As such, a shallow implementation might be using or making a single set of pre-canned badges for all learners to strive for (without their input).
+                    </p>
+                </div>
+                <div class="gm-reflection">
+                    <span class="reflection-tag">Reflection</span>
+                    <ul>
+                        <li>
+                            What are some other places where you've seen badges (or their equivalents)? What did the badges represent?
+                        </li>
+                        <li>
+                            What are your biggest concerns, if any, about giving your learners the freedom to decide on or design badges they want to aim for?
+                        </li>
+                        <li>
+                            Some learners prefer less autonomy for the promise of discovery, whereas others may feel boxed-in by the structure; how might you balance these perspectives if you choose to build badges into your lessons?
+                        </li>
+                    </ul>
+                </div> 
+            </div>
+            <!-- Competence tab content section -->
+            <div id="gm-badges-competence" class="gm-badges-tab gm-tab">
+                <h2>Competence</h2>
+                <p>
+                     When it comes to competence, the essential focus is on <em>growth</em>. <b>Badges</b> work best when they represent milestones in a learner's development. 
+                </p>
+                <div class="gm-meaningful">
+                    <span class="meaningful-tag">Meaningful Implementation</span>
+                    <p>
+                        Badges are designed in a way that allow for them to be attached to meaningful events or challenges. When a learner looks back at the badges they've earned, they can recall stories associated with each one, as well as their overall learning journey.
+                    </p>
+                </div>
+                <div class="gm-shallow">
+                    <span class="shallow-tag">Shallow Implementation</span>
+                    <p>
+                        Badges are awarded for tasks already expected of the learners, such as finishing a test or other assessment. There's no meaning attached to the badges and since it's required, it only signifies those learners who did not accomplish the task rather than signifying those who went above and beyond.
+                    </p>
+                </div>
+                <div class="gm-reflection">
+                    <span class="reflection-tag">Reflection</span>
+                    <ul>
+                        <li>
+                            How might you encourage (or assist) your learners with building their own scaffolding through the use of badges for topics they are interested in outside of the classroom?
+                        </li>
+                        <li>
+                            How might you design badges (or co-design them) so they communicate progress even when learners make mistakes?
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Relatedness tab content section -->
+            <div id="gm-badges-relatedness" class="gm-badges-tab gm-tab">
+                <h2>Relatedness</h2>
+                <p>
+                    Relatedness is all about connection. Badges can promote or undermine that, depending on their implementation. Let's see examples of badges can be implemented, in meaningful and shallow ways.
+                </p>
+                <div class="gm-meaningful">
+                    <span class="meaningful-tag">Meaningful Implementation</span>
+                    <p>
+                        One way to meaningfully implement badges is by making them peer-based. Learners have the opportunity to look for and notice positive things their peers are doing and award them with badges.
+                    </p>
+                </div>
+                <div class="gm-shallow">
+                    <span class="shallow-tag">Shallow Implementation</span>
+                    <p>
+                        Like with points, if badges are purely based on the individual achievements, separate from, or even compared to, other learners, this can cause division rather than bringing them together.
+                    </p>
+                </div>
+                <div class="gm-reflection">
+                    <span class="reflection-tag">Reflection</span>
+                    <ul>
+                        <li>
+                            For peer-based badges, how might you mitigate the potential effects of cliques while also ensuring the giving of the badge feels authentic to the learners?
+                        </li>
+                        <li>
+                            How might badges foster empathy in your learners? How might badges impede empathy?
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+            <hr class="dashed-break">
+            <h2>Non-Digital Recipe Using Badges</h2>
+            <div class="gm-recipe">
+                <span class="recipe-tag">Recipe</span>
+                <p>
+                    <b>Recognizing Growth</b>
+                </p>
+                <p>
+                    Materials Required:
+                    <ul>
+                        <li>
+                            Journals where learners can draw/write down/place their badges (earned and those still-to-be-earned)
+                        </li>
+                        <li>
+                            Potential list of badges (could be generated by you, generated by the learners, or co-created all together).
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    To embrace <b>autonomy</b>, allow the learners to either choose (or design their own) collection of badges that resonate with them (their interests, ways they want to grow, etc.). Depending on the topic and age group, maybe have them start with 3 to 5 badges to strive for. 
+                </p>
+                <p>
+                    For <b>competence</b>, either provide or work together on criteria for those badges so they symbolize growth for the learner(s). 
+                </p>
+                <p>
+                    To bring in <b>relatedness</b>, perhaps make it so a few of the badges are either collective, such that the class earns them together, or peer-awarded, where learners give awards to other learners in recognition of their accomplishments, hard work, generosity, etc.
+                </p>
+            </div>
+        </section>
+        <!-- Progression section -->
+        <section id="gm-progression" class="act act-V gm-progression">
+            <h2>Game Mechanic: <span class="gm-title">Progression</span></h2>
+            <!-- Intro to Badges section -->
+             <div class="gm-intro">
+                <p>
+                    <b>Progression is a tangible representation of improvement</b>
+                </p>
+             </div> 
+             <p>
+                In games, progression is critical for keeping players engaged because without meaningful progression, players might get bored or frustrated and stop playing.
+            </p>
+            <p>
+                Education is very similar. Educators scaffold their topics and provide different levels of challenge for different learners in order to, ideally, keep learners in a flow state.
+            </p>            
+            <p>
+                In both games and education, progression provides meaningful goalposts to aim for. Ones that feel achievable and consistently push them out of their comfort zone. 
+            </p>
+            <p>
+                Progression works well with other game mechanics. Points and badges are often used with progression to mark milestones, and stories naturally progress over time.
+            </p>
+             <!-- <hr class="dashed-break"> -->
+             <h2>Using Progression to Address SDT Needs</h2>
+            <!-- Tab bar -->
+            <div class="gm-tab-bar">
+                <!-- Tab buttons -->
+                <button class="gm-tab-option active" onclick="gmsdtTabSwitch(event, 'gm-progression-tab', 'gm-progression-autonomy')">Autonomy</button>
+                <button class="gm-tab-option" onclick="gmsdtTabSwitch(event, 'gm-progression-tab', 'gm-progression-competence')">Competence</button>
+                <button class="gm-tab-option" onclick="gmsdtTabSwitch(event, 'gm-progression-tab', 'gm-progression-relatedness')">Relatedness</button>
+            </div>
+            <!-- Autonomy tab content section -->
+            <div id="gm-progression-autonomy" class="gm-progression-tab gm-tab active">
+                <h2>Autonomy</h2>
+                <p>
+                    Autonomy, as it relates to progression, is about having the ability to choose how they progress, even if that progression is restricted by the overall scaffolding.
+                </p>
+                <div class="gm-meaningful">
+                    <span class="meaningful-tag">Meaningful Implementation</span>
+                    <p>
+                        The use of a "choose your own adventure" kind of progression is one way to meaningfully implement this mechanic. It allows learners to select their own path through the material, often at their own pace (when feasible), promoting autonomy.
+                    </p>
+                </div>
+                <div class="gm-shallow">
+                    <span class="shallow-tag">Shallow Implementation</span>
+                    <p>
+                        Linear (i.e., no choice) paths have a tendency to reduce autonomy. While learners can see their progress, they have no choice in how they progress. This is doubly true if learners need to move in lock-step rather than adjust the pacing to what fits their needs.
+                    </p>
+                </div>
+                <div class="gm-reflection">
+                    <span class="reflection-tag">Reflection</span>
+                    <ul>
+                        <li>
+                            Choose your own adventure can be a lot of extra work for educators, what alternatives can you think of for allowing for choice in progression?
+                        </li>
+                        <li>
+                            How might different pathways lead to learning the same competencies?
+                        </li>
+                        <li>
+                            Looking back at your own learning experiences, when have choices felt meaningful versus superficial?
+                        </li>
+                    </ul>
+                </div> 
+            </div>
+            <!-- Competence tab content section -->
+            <div id="gm-progression-competence" class="gm-progression-tab gm-tab">
+                <h2>Competence</h2>
+                <p>
+                    In a sense, progression is an embodiment of competence since it links so tightly to growth. The main idea here is to make competence visible and achievable so it remains motivating even when the challenges are difficult.
+                </p>
+                <div class="gm-meaningful">
+                    <span class="meaningful-tag">Meaningful Implementation</span>
+                    <p>
+                        Scaffolding is done in a way where skills and knowledge are built on top of prior ones. This can help to reinforce fundamentals while also pushing learners just enough to provide a challenge, promoting growth. The scaffolding also blends skills and eventually provides moments that mark mastery.
+                    </p>
+                </div>
+                <div class="gm-shallow">
+                    <span class="shallow-tag">Shallow Implementation</span>
+                    <p>
+                        The pacing of the scaffolding is inconsistent; scaffolding is too steep or too shallow (too much or too little challenge), leading learners to feel frustrated or bored.             
+                    </p>
+                </div>
+                <div class="gm-reflection">
+                    <span class="reflection-tag">Reflection</span>
+                    <ul>
+                        <li>
+                            How might you encourage learners to apply the skills they've mastered to a different domain?
+                        </li>
+                        <li>
+                            How might a learner know they have grown or improved rather than simply completed an activity or challenge? How might you help them learn how to build proper scaffolding for themselves to promote lifelong learning?
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Relatedness tab content section -->
+            <div id="gm-progression-relatedness" class="gm-progression-tab gm-tab">
+                <h2>Relatedness</h2>
+                <p>
+                    When it comes to relatedness, progression needs to provide some form of connection to others. This could be simply feeling supported by peers or educators, it could involve growing together with peers, or even contributing to the overall learning environment through their progress.
+                </p>
+                <div class="gm-meaningful">
+                    <span class="meaningful-tag">Meaningful Implementation</span>
+                    <p>
+                        Learners recognize and celebrate each other's progress, adding collaboratively-designed new tasks for those learners seeking more challenge, and providing mentorship and connection to those who may find some tasks a little too challenging. The overall learning environment is supportive and cooperative.                        
+                    </p>
+                </div>
+                <div class="gm-shallow">
+                    <span class="shallow-tag">Shallow Implementation</span>
+                    <p>
+                        Learners are isolated from each other and are discouraged from helping or intervening with peers who may feel bored and want extra challenge or who may feel frustrated or anxious and want hints or assistance with a task that's too challenging for them at the moment.
+                    </p>
+                </div>
+                <div class="gm-reflection">
+                    <span class="reflection-tag">Reflection</span>
+                    <ul>
+                        <li>
+                            Scenario: One learner is struggling with a task and another is seeking a new challenge. How might you cultivate a culture of helpfulness while also protecting against the potential dynamic where the helping learner does the work for the one who is finding the task too difficult?
+                        </li>
+                        <li>
+                            How might progression naturally create competition? How might that competition be healthy or unhealthy for different learners?
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+            <!-- <hr class="dashed-break"> -->
+            <h2>Non-Digital Recipe Using Progression</h2>
+            <div class="gm-recipe">
+                <span class="recipe-tag">Recipe</span>
+                <p>
+                    <b>Classroom Skill Tree</b>
+                </p>
+                <p>
+                    Materials Required:
+                    <ul>
+                        <li>
+                            Construction Paper
+                        </li>
+                        <li>
+                            Tape / Sticky tack / Command strips
+                        </li>
+                        <li>
+                            Post-It Notes (ideally different colors)
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    The goal of this "skill tree" is to give learners a guide for how they, and their peers, are progressing with different competencies during the course of the term.
+                </p>
+                <p>
+                    The first step is that the teacher will need to prepare the competencies that the learners need to master by the end of the term. Ideally, the teacher will already have a good sense for the scaffolding. <em>Optionally</em>, include the learners in balancing the scaffolding to help them build intuition for doing so for themselves in the future.
+                </p>
+                <p>
+                    Based on the scaffolding, give the learners a general tree-like structure for them to be creative with. The learners will collectively bulid a tree out of construction paper that has a variety of branches. On each branch, have them place symbols representing different kinds of challenges. Even though the tree is primarily cosmetic, it may still provide enough <b>autonomy</b> and generate motivational buy-in for learners.
+                </p>
+                <p>
+                    <em>Note:</em> Each branch should have related skills that build on one another as a learner goes from the trunk to the leaves. Each next step will build on previous ones. These activities are largely created/determined by the teacher.
+                </p>
+                <p>
+                    To the degree the teacher wants to build in more <b>autonomy</b>, allow different pathways up each branch, or even allow learners to select which branches (i.e., class content) they want to engage in first.
+                </p>
+                <p>
+                    <b>Competence</b> is naturally built in by the teacher providing the scaffolding that is visualized by the learners through the branches of the tree.
+                </p>
+                <p>
+                    As the class moves through lessons and learners practice new skills, they'll reach mastery moments. These are areas of the tree where learners can reflect on what they've learned, write their thoughts on a Post-It Note, and stick it on that part of the tree. This represents <b>relatedness</b>, since they'll get recognition for reaching that milestone and can feel a shared sense of belonging and support as more learners also reach it. It may even inspire them to mentor learners who are finding it difficult to climb certain sections of the tree.
+                </p>
+            </div>
+        </section>
+        <!-- Story section -->
+        <section id="gm-story" class="act act-V gm-story">
+            <h2>Game Mechanic: <span class="gm-title">Story</span></h2>
+            <!-- Intro to Badges section -->
+             <div class="gm-intro">
+                <p>
+                    <b>Stories explore and explain situations and experiences, often infused with emotional content to inform or affect change.</b>
+                </p>
+             </div> 
+             <p>
+                Stories are an integral part of being human. We teach, learn, share, understand, connect, and generally communicate through stories.
+            </p>            
+            <p>
+                Some games are full of stories, and the entire gameplay revolves around those tales. On the other hand, some games have no story or limited narrative structure. But, they still have stories, since the players' journeys end up becoming the stories.
+            </p>
+            <p>
+                We can utilize story in a variety of ways in education to motivate learners. Stories can empower and connect, but if implemented poorly, can distract from the subject being taught.
+            </p>
+             <!-- <hr class="dashed-break"> -->
+             <h2>Using Story to Address SDT Needs</h2>
+            <!-- Tab bar -->
+            <div class="gm-tab-bar">
+                <!-- Tab buttons -->
+                <button class="gm-tab-option active" onclick="gmsdtTabSwitch(event, 'gm-story-tab', 'gm-story-autonomy')">Autonomy</button>
+                <button class="gm-tab-option" onclick="gmsdtTabSwitch(event, 'gm-story-tab', 'gm-story-competence')">Competence</button>
+                <button class="gm-tab-option" onclick="gmsdtTabSwitch(event, 'gm-story-tab', 'gm-story-relatedness')">Relatedness</button>
+            </div>
+            <!-- Autonomy tab content section -->
+            <div id="gm-story-autonomy" class="gm-story-tab gm-tab active">
+                <h2>Autonomy</h2>
+                <p>
+                    When we watch movies or read books, we often have little or no influence over the story. This is true of many games, as well, though games at least give us a semblance of control due to all the other aspects that provide <b>autonomy</b>. Some books, movies, and games also fall into the choose-your-own-adventure genre, but it's challenging to design meaningful choices that do more than change some minor plot points or eventually end in the same result. The essential concept for autonomy when it comes to the story game mechanic is the ability to impact the narrative.
+                </p>
+                <div class="gm-meaningful">
+                    <span class="meaningful-tag">Meaningful Implementation</span>
+                    <p>
+                        Allow different groups or the entire class to build the world and tell the story. It's a lot less effort for the teacher, provides heaps of autonomy for the learners, and can help learners develop creative thinking and collaboration skills.
+                    </p>
+                </div>
+                <div class="gm-shallow">
+                    <span class="shallow-tag">Shallow Implementation</span>
+                    <p>
+                        Writing the entire story for the learners to follow. In a sense, this is using pieces of story as a reward for completing tasks, and they have no agency in influencing the story.
+                    </p>
+                </div>
+                <div class="gm-reflection">
+                    <span class="reflection-tag">Reflection</span>
+                    <ul>
+                        <li>
+                            How might you guide a classroom or teams in creating a shared world where everyone can contribute and build tasks and challenges that fit in with the narrative?
+                        </li>
+                        <li>
+                            How might the use of improv during a shared storytelling session land with your learners?
+                        </li>
+                        <li>
+                            How might you design activities that help learners feel more connected to the narrative?
+                        </li>
+                    </ul>
+                </div> 
+            </div>
+            <!-- Competence tab content section -->
+            <div id="gm-story-competence" class="gm-story-tab gm-tab">
+                <h2>Competence</h2>
+                <p>
+                    Interwoven is the word that comes to mind for story and competence. For story to be effective for communicating competence, it needs to be clearly linked to what is being learned. Even a quick sentence or two that adds framing can help tremendously. Without that, the story and gameplay (or educational materials) feel disconnected and the spell might be broken.
+                </p>
+                <div class="gm-meaningful">
+                    <span class="meaningful-tag">Meaningful Implementation</span>
+                    <p>
+                        Activities represent some kind of call to action on the part of the learners. When designed well, even abstracted puzzles or challenges have an emotional thread that clearly ties it into the tale, and they provide just enough difficulty to make the goal feel worthwhile. This link between story and gameplay is essential for utilizing this mechanic well.
+                    </p>
+                </div>
+                <div class="gm-shallow">
+                    <span class="shallow-tag">Shallow Implementation</span>
+                    <p>
+                        When the story's various emotional beats don't align with the competencies being learned, it may cause the learners to become disenchanted with the story or disengaged from the skills being learned.
+                    </p>
+                </div>
+                <div class="gm-reflection">
+                    <span class="reflection-tag">Reflection</span>
+                    <ul>
+                        <li>
+                            How might a story reinforce or distract from learning goals?
+                        </li>
+                        <li>
+                            How does the narrative provide deeper insights into the content being taught?
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Relatedness tab content section -->
+            <div id="gm-story-relatedness" class="gm-story-tab gm-tab">
+                <h2>Relatedness</h2>
+                <p>
+                    Immersion and sense of belonging are powerful aspects of stories. In terms of relatedness, story has a natural advantage over other mechanics, especially when shared storytelling or well-designed, integrated challenges connect learners to peers or characters in the story.
+                </p>
+                <div class="gm-meaningful">
+                    <span class="meaningful-tag">Meaningful Implementation</span>
+                    <p>
+                        Learners collaboratively create the story, each one feeling connected and able to bring personal experiences into the narrative, enrichening it.
+                    </p>
+                </div>
+                <div class="gm-shallow">
+                    <span class="shallow-tag">Shallow Implementation</span>
+                    <p>
+                        Any story structure that feels unsafe. This can range from uncomfortable topics to stereotypes, biases, etc. 
+                    </p>
+                </div>
+                <div class="gm-reflection">
+                    <span class="reflection-tag">Reflection</span>
+                    <ul>
+                        <li>
+                            How might you allow for shared storytelling narrative that also feels safe for all learners? What supports learners in co-creating stories?
+                        </li>
+                        <li>
+                            How might you foster a shared world where learners recognize each other's discoveries and actions in it?
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+            <!-- <hr class="dashed-break"> -->
+            <h2>Non-Digital Recipe Using Story</h2>
+            <div class="gm-recipe">
+                <span class="recipe-tag">Recipe</span>
+                <p>
+                    <b>Story Votes</b>
+                </p>
+                <p>
+                    Materials Required:
+                    <ul>
+                        <li>
+                            Index Cards
+                        </li>
+                        <li>
+                            Tape
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    Break the learners into groups of 3 to 5 and give each group five index cards.
+                </p>
+                <p>
+                    On the <b>first index card</b>, each group will write a short setting for the shared world. Each group will then reveal what their setting is. After all settings have been revealed, learners will use ranked-choice voting to whittle down the options to the one that reaches a majority. That winner will become the setting.
+                </p>
+                <p>
+                    On the <b>second index card</b>, each group will write a short sentence for the overall conflict happening in the story. Repeat the ranked-choice voting method to choose the conflict.
+                </p>
+                <p>
+                    On the <b>third index card</b>, each group writes a short sentence on how the learners think the story could connect to what they are learning at the moment. Repeat the ranked-choice voting method.
+                </p>
+                <p>
+                    On the <b>fourth index card</b>, groups point out how this world is different from the real world. Feel free to use ranked-choice voting here, or try turning it into a discussion instead if desired.
+                </p>
+                <p>
+                    On the <b>last index card</b>, with a lot of the overall structure of the world being created by the learners, allow each of them to contribute their own unique part to the world. This might be a character, city, natural or artificial phenomenon, creature, historical event, etc. Have them aim for it to "make sense" within the rules established thus far (i.e., setting, conflict, how it connects to the competencies, and how it's different from the real world) whenever possible.
+                </p>
+                <p>
+                    Use this world to help build out the story and activities that are interlinked with the story. Repeat or modify as needed to continue letting the learners create the world and guide the direction of the narrative.
+                </p>
+                <p>
+                    By allowing learners to create the story and vote on it, they fulfill both <b>autonomy</b> and <b>relatedness</b>. <b>Competence</b> comes through the gradual building of the story and its elements, during this initial storytelling session, as well as through future iterations that continue to develop the narrative. It supports <b>competence</b> by providing the teacher with a general structure and plenty of learner-created content to experiment with as they design the lessons and activities.
+                </p>
+            </div>
+        </section>
+        <!-- Co-design section -->
+        <section id="gm-co-design" class="act act-V gm-co-design">
+            <h2>Game Mechanic: <span class="gm-title">Co-design</span></h2>
+            <!-- Intro to Badges section -->
+             <div class="gm-intro">
+                <p>
+                    <b>Co-design is creating learning experiences with learners, inviting them to co-create various elements of the learning environment.</b>
+                </p>
+             </div> 
+             <p>
+                In games, especially digital games, the sandbox genre is probably the closest we get to co-design. Some games allow for players to create their own games or levels using the tools provided, like in the <em>Mario Maker</em> games, too.
+            </p>
+            <p>
+                In education, co-design is a useful mechanic to include because it shifts learners' mindsets from consumers to co-creators of educational content.
+            </p>            
+             <!-- <hr class="dashed-break"> -->
+             <h2>Using Co-design to Address SDT Needs</h2>
+            <!-- Tab bar -->
+            <div class="gm-tab-bar">
+                <!-- Tab buttons -->
+                <button class="gm-tab-option active" onclick="gmsdtTabSwitch(event, 'gm-co-design-tab', 'gm-co-design-autonomy')">Autonomy</button>
+                <button class="gm-tab-option" onclick="gmsdtTabSwitch(event, 'gm-co-design-tab', 'gm-co-design-competence')">Competence</button>
+                <button class="gm-tab-option" onclick="gmsdtTabSwitch(event, 'gm-co-design-tab', 'gm-co-design-relatedness')">Relatedness</button>
+            </div>
+            <!-- Autonomy tab content section -->
+            <div id="gm-co-design-autonomy" class="gm-co-design-tab gm-tab active">
+                <h2>Autonomy</h2>
+                <p>
+                    The main idea with autonomy when it comes to co-design is allowing learners to have the ability to meaningfully direct various elements of their own learning.
+                </p>
+                <div class="gm-meaningful">
+                    <span class="meaningful-tag">Meaningful Implementation</span>
+                    <p>
+                        One idea is to use a what, when, how, and why kind of framework, where the teacher picks, say, what needs to be done and why, and the learners have an opportunity, within certain constraints, to determine the when and how. This allows for enough choice that learners have autonomy, but where teachers are able to set boundaries to ensure the material is learned.
+                    </p>
+                </div>
+                <div class="gm-shallow">
+                    <span class="shallow-tag">Shallow Implementation</span>
+                    <p>
+                        One shallow implementation would be to ask learners for their input on different elements, but then ignore the input altogether or modify it so heavily that it no longer resembles what the learners came up with.
+                    </p>
+                </div>
+                <div class="gm-reflection">
+                    <span class="reflection-tag">Reflection</span>
+                    <ul>
+                        <li>
+                            What are some major issues you can see with trying to implement co-design into your lessons? How might you mitigate some of these issues?
+                        </li>
+                        <li>
+                            How might you guide learners during co-designing so they see the value of different pedagogical tools or approaches without being too steeped in the theory?
+                        </li>
+                    </ul>
+                </div> 
+            </div>
+            <!-- Competence tab content section -->
+            <div id="gm-co-design-competence" class="gm-co-design-tab gm-tab">
+                <h2>Competence</h2>
+                <p>
+                    Much like how competing against an opponent with roughly equal skill can often teach more than solo learning, or working together with a peer allows for the exchange of novel ideas and perspectives, co-design can encourage and accelerate growth through an apprentice-like model.
+                </p>
+                <div class="gm-meaningful">
+                    <span class="meaningful-tag">Meaningful Implementation</span>
+                    <p>
+                        Learners are invited to co-create. The teacher is reflective, expressing and explaining why they might take one approach over another, but allowing learners to explore and experiment with those approaches, constraints, etc.
+                    </p>
+                </div>
+                <div class="gm-shallow">
+                    <span class="shallow-tag">Shallow Implementation</span>
+                    <p>
+                        Learners are invited to co-create, but with minimal guidance, potentially causing confusion or stress.
+                    </p>
+                </div>
+                <div class="gm-reflection">
+                    <span class="reflection-tag">Reflection</span>
+                    <ul>
+                        <li>
+                            How might you embed tiny experiments into co-design sessions so learners develop skills of iterating and testing ideas quickly related to the topics they are learning?
+                        </li>
+                        <li>
+                            How might co-designing make your own design skills better?
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Relatedness tab content section -->
+            <div id="gm-co-design-relatedness" class="gm-co-design-tab gm-tab">
+                <h2>Relatedness</h2>
+                <p>
+                    Relatedness is primarily about feeling a sense of community or a sense of belonging. Co-design, when implemented meaningfully, allows for this through building shared learning structures or even a shared learning culture.
+                </p>
+                <div class="gm-meaningful">
+                    <span class="meaningful-tag">Meaningful Implementation</span>
+                    <p>
+                        Co-designs are discussed and refined through input from all or most of the learners. Or another option may be to allow learners to present ideas and all learners vote on those ideas to see which one(s) are implemented into the final designs.
+                    </p>
+                </div>
+                <div class="gm-shallow">
+                    <span class="shallow-tag">Shallow Implementation</span>
+                    <p>
+                        If a co-design session is dominated by a small percentage of the learners, or if not moderated well so it feels safe, then the session may feel more isolating than connecting.
+                    </p>
+                </div>
+                <div class="gm-reflection">
+                    <span class="reflection-tag">Reflection</span>
+                    <ul>
+                        <li>
+                            What rules might you incorporate to make it so learners can feel safe and connecting during co-design?
+                        </li>
+                        <li>
+                            How might co-design reinforce any cliques or other kinds of social dynamics? How might you mitigate negative effects of those dynamics?
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+            <!-- <hr class="dashed-break"> -->
+            <h2>Non-Digital Recipe Using Co-design</h2>
+            <div class="gm-recipe">
+                <span class="recipe-tag">Recipe</span>
+                <p>
+                    <b>Tiny Experiments</b>
+                </p>
+                <p>
+                    Materials Required:
+                    <ul>
+                        <li>
+                            The current syllabus
+                        </li>
+                        <li>
+                            Index cards
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    One recommendation is experimenting with assessments.                  
+                </p>
+                <p>
+                    Take one element of the learning environment, process, or experience and allow learners to brainstorm new ideas to try out. In this way, it primes learners to challenge systems critically, looking for ways to improve them. Having them do so collaboratively empowers them further, too.
+                </p>
+                <p>
+                    For example, let's take assessments as the experimental part for this week, month, or term (or other time frame that seems appropriate). For the proposals that the learners come up with, the teacher will need to set the constraints, potentially provide example alternative methods of assessment (in case learners are not sure what is available), and ultimately give reasoning for why an idea will or won't work given pedagogical and other requirements. The learners also will give reasoning (i.e., hypotheses) for why they think their chosen assessment will work.
+                </p>
+                <p>
+                    Given a set of experiments to try out that both the learners and the teacher agree on, have the learners test those experimental assessments out, one at a time, and report what works, what their hypotheses were, what didn't work, how they might improve the assessment or use it in a different way, etc.
+                </p>
+                <p>
+                    By letting them experiment, the learners have <b>autonomy</b>. By having the learners given reasoning for their ideas, and by having them listen as the teacher gives their reasoning, as well, <b>competence</b> is satisfied. And, when done collaborative, this co-design session promotes <b>relatedness</b>.
+                </p>
+            </div>
+        </section>
+        <!-- Collaboration section -->
+        <section id="gm-collaboration" class="act act-V gm-collaboration">
+            <h2>Game Mechanic: <span class="gm-title">Collaboration</span></h2>
+            <!-- Intro to Badges section -->
+             <div class="gm-intro">
+                <p>
+                    <b>Collaboration is two or more people working together and supporting each other to achieve a shared goal.</b>
+                </p>
+             </div> 
+             <p>
+                Collaboration is very common in our society. Most complex projects are too big for individuals to complete within a reasonable time frame and often require collections of skills that take years, and even decades, to hone. As such, it's an important mechanic to implement and skill for learners to develop.
+            </p>
+            <p>
+                In education, this often looks like <em>group projects</em> or <em>study groups</em>.
+            </p>
+             <!-- <hr class="dashed-break"> -->
+             <h2>Using Collaboration to Address SDT Needs</h2>
+            <!-- Tab bar -->
+            <div class="gm-tab-bar">
+                <!-- Tab buttons -->
+                <button class="gm-tab-option active" onclick="gmsdtTabSwitch(event, 'gm-collaboration-tab', 'gm-collaboration-autonomy')">Autonomy</button>
+                <button class="gm-tab-option" onclick="gmsdtTabSwitch(event, 'gm-collaboration-tab', 'gm-collaboration-competence')">Competence</button>
+                <button class="gm-tab-option" onclick="gmsdtTabSwitch(event, 'gm-collaboration-tab', 'gm-collaboration-relatedness')">Relatedness</button>
+            </div>
+            <!-- Autonomy tab content section -->
+            <div id="gm-collaboration-autonomy" class="gm-collaboration-tab gm-tab active">
+                <h2>Autonomy</h2>
+                <p>
+                    Autonomy requires a sense of agency, so it's important that learners are given a choice with respect to who, what, when, why, or how they work with others.
+                </p>
+                <div class="gm-meaningful">
+                    <span class="meaningful-tag">Meaningful Implementation</span>
+                    <p>
+                        Assign learners to groups (or allow them self-organize). Provide a template for the groups to use to define roles, responsibilities, how they'll choose directions for the project, etc. They fill it out together with the goal of getting buy-in from each other to mitigate the all-too-common issue of one or two members doing most of the work while the others coast.
+                    </p>
+                </div>
+                <div class="gm-shallow">
+                    <span class="shallow-tag">Shallow Implementation</span>
+                    <p>
+                        Even if learners are able to form their own groups, a group project can still fall into the shallow category when there's not enough structure to promote a sense of autonomy.
+                    </p>
+                </div>
+                <div class="gm-reflection">
+                    <span class="reflection-tag">Reflection</span>
+                    <ul>
+                        <li>
+                            What are some benefits and drawbacks to allowing learners to choose their own groups?
+                        </li>
+                        <li>
+                            How might you provide modeling for your learners so they can learn (or better understand) how to work in groups? How does this modeling support their independence and interdependence?
+                        </li>
+                    </ul>
+                </div> 
+            </div>
+            <!-- Competence tab content section -->
+            <div id="gm-collaboration-competence" class="gm-collaboration-tab gm-tab">
+                <h2>Competence</h2>
+                <p>
+                    Competence in collaboration tends to look like collective growth and contribution to the group. Learners can see their own progress, their teammates' progress, and how everyone contributes to the shared purpose.
+                </p>
+                <div class="gm-meaningful">
+                    <span class="meaningful-tag">Meaningful Implementation</span>
+                    <p>
+                        Create structures so challenges require a combination of different skills. Require learners to pair up to work on tasks or sub-tasks to allow them to naturally share knowledge and approaches with each other. Encourage group reflection, as well, so groups can improve their strategy and ensure each member is growing.
+                    </p>
+                </div>
+                <div class="gm-shallow">
+                    <span class="shallow-tag">Shallow Implementation</span>
+                    <p>
+                        When the only focus is on the outcome of completing a deliverable, then that can sometimes lead to those more maladaptive strategies of "divide and conquer" (without reflection or meaningful interaction), "one person does all the work", or "hierarchical decision making" (where a handful of students make the decisions and feel invested while the others do enough to scrape by).
+                        
+                    </p>
+                </div>
+                <div class="gm-reflection">
+                    <span class="reflection-tag">Reflection</span>
+                    <ul>
+                        <li>
+                            With respect to skill development and learning competencies, how does collaborative learning differ from individual learning? How are they similar?
+                        </li>
+                        <li>
+                            How might you design a collaborative experiment that allows learners to practice skills that would be difficult for them to practice on their own?
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Relatedness tab content section -->
+            <div id="gm-collaboration-relatedness" class="gm-collaboration-tab gm-tab">
+                <h2>Relatedness</h2>
+                <p>
+                    The key for relatedness in terms of collaboration is feeling a sense of belonging. Even if there is some friction among the different teammates, learners who feel like they can contribute to the group are more likely to experience a sense of belonging.
+                </p>
+                <div class="gm-meaningful">
+                    <span class="meaningful-tag">Meaningful Implementation</span>
+                    <p>
+                        Providing structure that encourages learners to share their experiences and to mentor each other can lead to a stronger sense of belonging and safety within the group.
+                    </p>
+                </div>
+                <div class="gm-shallow">
+                    <span class="shallow-tag">Shallow Implementation</span>
+                    <p>
+                        Without structure to encourage reflection or sharing, the "divide and conquer" could devolve into parallel work that gets stitched together at the end in service of the outcome alone. 
+                    </p>
+                    <p>
+                        Without guidance on how to manage conflict or embrace everyone's ideas and thoughts, sometimes learners expressing more dominant behaviors can take over, potentially devolving into either a more hierarchical or "one person does all the work" dynamic.
+                    </p>
+                </div>
+                <div class="gm-reflection">
+                    <span class="reflection-tag">Reflection</span>
+                    <ul>
+                        <li>
+                            What are some norms or skills you'd like your learners to incorporate into their group dynamics? What are some you'd like them to avoid?
+                        </li>
+                        <li>
+                            Sometimes groups just don't work for a variety of reasons, how might you mitigate issues within these groups and how they might affect the broader learning space?
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+            <hr class="dashed-break">
+            <h2>Non-Digital Recipe Using Collaboration</h2>
+            <div class="gm-recipe">
+                <span class="recipe-tag">Recipe</span>
+                <p>
+                    <b>Concept Cartography</b>
+                </p>
+                <p>
+                    Materials Required:
+                    <ul>
+                        <li>
+                            Post-It Notes
+                        </li>
+                        <li>
+                            Colored Pencils/Markers
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    The goal of this project is to practice collaborative ideation.
+                </p>
+                <p>
+                    Assign groups (or allow learners to self-organize). Then give the groups their challenge(s).
+                </p>
+                <p>
+                    To promote autonomy, the first step is for each individual learner to use the Post-It Notes to write down 3-5 ideas, questions, concerns, examples, solutions, etc. related to the challenge.
+                </p>
+                <p>
+                    To encourage competence, the next step is for each group to combine all their individual Post-It Notes on a board or wall or desk. They'll categorize the different notes, moving them as needed to form the different clusters. Along the way, they'll need to make a case for why these need to be moved or clustered in the way they're proposing; this encourages deeper thinking on the topic and groupings and exposes them to new ideas and perspectives from other learners. 
+                </p>
+                <p>
+                    To promote a sense of belonging, each group needs to craft a kind of story or visual representation of their collective understanding of the challenge, including and reflecting each member's contributions in some way.
+                </p>
+            </div>
+        </section>
+        <!-- Competition section -->
+        <section id="gm-competition" class="act act-V gm-competition">
+            <h2>Game Mechanic: <span class="gm-title">Competition</span></h2>
+            <!-- Intro to Competition section -->
+             <div class="gm-intro">
+                <p>
+                    <b>Competition is the comparison of actions or performances against others, a set of standards, or yourself.</b>
+                </p>
+             </div> 
+             <p>
+                In reality and in games, competition provides a sense of comparison, which is useful since it helps you know where your current behaviors, actions, or performances are relative to other people, to some set standards, or to yourself.
+            </p>
+            <p>
+                Competition is incredibly common and can be extremely motivating. Success feels good, especially when it's earned through dedication and growth. At the same time, it can be disheartening if you can't seem to win regardless of how hard you try.
+            </p>
+             <!-- <hr class="dashed-break"> -->
+             <h2>Using Competition to Address SDT Needs</h2>
+            <!-- Tab bar -->
+            <div class="gm-tab-bar">
+                <!-- Tab buttons -->
+                <button class="gm-tab-option active" onclick="gmsdtTabSwitch(event, 'gm-competition-tab', 'gm-competition-autonomy')">Autonomy</button>
+                <button class="gm-tab-option" onclick="gmsdtTabSwitch(event, 'gm-competition-tab', 'gm-competition-competence')">Competence</button>
+                <button class="gm-tab-option" onclick="gmsdtTabSwitch(event, 'gm-competition-tab', 'gm-competition-relatedness')">Relatedness</button>
+            </div>
+            <!-- Autonomy tab content section -->
+            <div id="gm-competition-autonomy" class="gm-competition-tab gm-tab active">
+                <h2>Autonomy</h2>
+                <p>
+                    For autonomy, choice is key. As such, learners need to feel some agency over who, what, when, where, why, how, or even if they compete.
+                </p>
+                <div class="gm-meaningful">
+                    <span class="meaningful-tag">Meaningful Implementation</span>
+                    <p>
+                          One way might be to let learners set their own goals and compete with themselves. Another might be to allow learners to opt-in or opt-out of competition, or to choose, when possible, who or what they are competing against. 
+                    </p>
+                </div>
+                <div class="gm-shallow">
+                    <span class="shallow-tag">Shallow Implementation</span>
+                    <p>
+                        Standardized tests come to mind. Learners might be forced to participate and the stakes may be quite high.
+                    </p>
+                </div>
+                <div class="gm-reflection">
+                    <span class="reflection-tag">Reflection</span>
+                    <ul>
+                        <li>
+                            How do your learners engage with competition? Do they find it energizing or draining? If they have a choice in competing, does their viewpoint change?
+                        </li>
+                        <li>
+                            What does success mean to you? To your learners? If winning is important, why? If winning is not important, why?
+                        </li>
+                    </ul>
+                </div> 
+            </div>
+            <!-- Competence tab content section -->
+            <div id="gm-competition-competence" class="gm-competition-tab gm-tab">
+                <h2>Competence</h2>
+                <p>
+                    With respect to competence, competition has a natural advantage since competition itself often promotes growth and mastery. Let's look at some examples of meaningful and shallow methods of incorporating competition.
+                </p>
+                <div class="gm-meaningful">
+                    <span class="meaningful-tag">Meaningful Implementation</span>
+                    <p>
+                        Learners competing against themselves can promote growth since they notice when they are improving. When competing against other learners, focusing on what they can learn from the experience (win or lose) can also promote growth.
+                    </p>
+                </div>
+                <div class="gm-shallow">
+                    <span class="shallow-tag">Shallow Implementation</span>
+                    <p>
+                        Depending on how high the stakes are and the intensity of the environment of the competition, if the only things that matter are the outcomes, then it can promote playing-it-safe kinds of behaviors (stagnating growth) or even maladaptive behaviors like cheating. 
+                    </p>
+                </div>
+                <div class="gm-reflection">
+                    <span class="reflection-tag">Reflection</span>
+                    <ul>
+                        <li>
+                            How do your learners interpret outcomes? As feedback on how to improve, as praise or criticism if they performed or didn't perform well, or something else?
+                        </li>
+                        <li>
+                            When looking at fairness, how might you design a competition that helps to mitigate inequalities among your learners?
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Relatedness tab content section -->
+            <div id="gm-competition-relatedness" class="gm-competition-tab gm-tab">
+                <h2>Relatedness</h2>
+                <p>
+                    Competition often includes a social component, but its implementation can cause the amount of connection the participants feel to vary. Let's see some examples of when connection might be stronger or weaker.
+                </p>
+                <div class="gm-meaningful">
+                    <span class="meaningful-tag">Meaningful Implementation</span>
+                    <p>
+                        Competing in teams can promote a sense of connection and mutual respect among team members. Competition where participants are well-matched (i.e., roughly similar skill levels) can also promote relatedness.
+                    </p>
+                </div>
+                <div class="gm-shallow">
+                    <span class="shallow-tag">Shallow Implementation</span>
+                    <p>
+                        Zero-sum games tend to promote a single winner, winner-take-all kind of mindset. If the competition is entirely focused on that kind of win or lose perspective, then it can promote disconnection. 
+                    </p>
+                </div>
+                <div class="gm-reflection">
+                    <span class="reflection-tag">Reflection</span>
+                    <ul>
+                        <li>
+                            How might teams promote mutual respect? How might them undermine it? What makes for a good team?
+                        </li>
+                        <li>
+                            How might you promote connection among competitors who tend to have a win or lose mindset?
+                        </li>
+                        <li>
+                            When are rivalries healthy? When are they unhealthy?
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+            <hr class="dashed-break">
+            <h2>Non-Digital Recipe Using Competition</h2>
+            <div class="gm-recipe">
+                <span class="recipe-tag">Recipe</span>
+                <p>
+                    <b>I Want Competition My Way</b>
+                </p>
+                <p>
+                    Materials Required:
+                    <ul>
+                        <li>
+                            Project Board with a few choices for competitions.
+                        </li>
+                        <li>
+                            Post-it Notes where learners can write their names and stick them on the project they want to compete in.
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    The overall goal is to provide a few different projects/competitions for learners to participate in. 
+
+                    To provide <b>autonomy</b>, the learners can choose which project to participate in. Ideally, they will have the ability to choose between:
+                    <ul>
+                        <li>Competing against themselves</li>
+                        <li>Competing individually against others</li>
+                        <li>Competing as a team against other teams</li>
+                    </ul>
+                </p>
+                <p>
+                    To promote <b>competence</b>, include discussions that focus on learning from mistakes, celebrating creative solutions or strategies, and allowing learners to reflect on their own growth through the competition.
+                </p>
+                <p>
+                    For teams, <b>relatedness</b> can be fostered through encouraging each member to embrace their own skills and also learn from their teammates. The same can occur for individuals. If they compete against others, have them focus more on learning from their opponent. If they are competing against themselves, have them reflect with others who chose the same (or a similar) project to learn from each other.
+                </p>
+            </div>
+        </section>
+        <!-- Roleplay section -->
+        <section id="gm-roleplay" class="act act-V gm-roleplay">
+            <h2>Game Mechanic: <span class="gm-title">Roleplay</span></h2>
+            <!-- Intro to Roleplay section -->
+             <div class="gm-intro">
+                <p>
+                    <b>Roleplay is essentially inhabiting different perspectives than your own, often expressed as playing as a character with their own personality, viewpoint on life, and lived experiences.</b>
+                </p>
+             </div> 
+             <p>
+                This happens in a lot of roleplaying games and action adventure games since you're often playing as a character or party of characters. These characters typically have their own rich inner worlds and interactions and dynamics with other characters. In D&D, players will often create their own characters and play as those characters, taking on their mannerisms, making decisions based on what those characters would do, etc.
+            </p>            
+            <p>
+                In education, roleplaying could allow learners to build empathy and the skill of perspective-taking. It could also be a way for them to channel traits of certain careers or people, such as applying design skills by "thinking like a designer" or mentoring peers by "thinking like an educator."
+            </p>
+             <!-- <hr class="dashed-break"> -->
+             <h2>Using Roleplay to Address SDT Needs</h2>
+            <!-- Tab bar -->
+            <div class="gm-tab-bar">
+                <!-- Tab buttons -->
+                <button class="gm-tab-option active" onclick="gmsdtTabSwitch(event, 'gm-roleplay-tab', 'gm-roleplay-autonomy')">Autonomy</button>
+                <button class="gm-tab-option" onclick="gmsdtTabSwitch(event, 'gm-roleplay-tab', 'gm-roleplay-competence')">Competence</button>
+                <button class="gm-tab-option" onclick="gmsdtTabSwitch(event, 'gm-roleplay-tab', 'gm-roleplay-relatedness')">Relatedness</button>
+            </div>
+            <!-- Autonomy tab content section -->
+            <div id="gm-roleplay-autonomy" class="gm-roleplay-tab gm-tab active">
+                <h2>Autonomy</h2>
+                <p>
+                    The theme for autonomy is choice. In the case of roleplaying, learners have agency to decide how their character or role might make choices or interact with others during a session.
+                </p>
+                <div class="gm-meaningful">
+                    <span class="meaningful-tag">Meaningful Implementation</span>
+                    <p>
+                        Learners are able to choose the role they want to play (or better, create the role). As they play the role, they may need to act in a way that's consistent with their created character, but they are given plenty of freedom to act in ways they see their character acting, even if it's different than expected.
+                    </p>
+                </div>
+                <div class="gm-shallow">
+                    <span class="shallow-tag">Shallow Implementation</span>
+                    <p>
+                        Learners are cast as playing certain characters rather than choosing. If it's a play, for example, then the lines are most likely scripted, as well. The choices may be in how the acting is done, but, depending on the learner, that may or may not be sufficient to qualify as autonomy.
+                    </p>
+                </div>
+                <div class="gm-reflection">
+                    <span class="reflection-tag">Reflection</span>
+                    <ul>
+                        <li>
+                            Some learners can "get into character" more easily than others. How might you encourage or help those who may be less comfortable to participate?
+                        </li>
+                        <li>
+                            How flexible might you allow the roleplay scenario to be? How would you set ground rules ahead of time for establishing comfort and boundaries?
+                        </li>
+                    </ul>
+                </div> 
+            </div>
+            <!-- Competence tab content section -->
+            <div id="gm-roleplay-competence" class="gm-roleplay-tab gm-tab">
+                <h2>Competence</h2>
+                <p>
+                    Competence is all about improvement. Within the context of roleplaying, competence is largely about being able to assess and respond to situations within a scenario from the borrowed perspective. 
+                </p>
+                <div class="gm-meaningful">
+                    <span class="meaningful-tag">Meaningful Implementation</span>
+                    <p>
+                        Roles played are scaffolded to gradually build familiarity and comfort with imagining and portraying different traits of the character. It might simply start with motivation and weave that into some decision making. It might evolve into mannerisms with deep character development or having the learner make difficult choices they would not normally make based on their understanding of their role.
+                    </p>
+                </div>
+                <div class="gm-shallow">
+                    <span class="shallow-tag">Shallow Implementation</span>
+                    <p>
+                        The roles are not scaffolded well, leading to frustration if the learner's skills don't yet match the levels required. Scripted characters can be ok, particularly since different emotional qualities can be developed and expressed. 
+                    </p>
+                </div>
+                <div class="gm-reflection">
+                    <span class="reflection-tag">Reflection</span>
+                    <ul>
+                        <li>
+                            How might you design and develop a role to allow learners to ease into the character?
+                        </li>
+                        <li>
+                            How might you encourage learners to reflect on and give reasoning for their decision-making while in-character?
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Relatedness tab content section -->
+            <div id="gm-roleplay-relatedness" class="gm-roleplay-tab gm-tab">
+                <h2>Relatedness</h2>
+                <p>
+                    Relatedness is largely about contributing to a shared experience, but is also about feeling safe while expressing vulnerability. It can be a surprisingly vulnerable experience to roleplay as a different character, so a meaningful implementation will likely address that as best as possible.
+                </p>
+                <div class="gm-meaningful">
+                    <span class="meaningful-tag">Meaningful Implementation</span>
+                    <p>
+                        Not all roleplay is theatrical, so allowing learners to take on different perspectives through other media can be quite beneficial for feeling like they can contribute to the shared imagination without needing to behave in specific ways. Allowing for different types of roles and methods of expression is likely produce  meaningful connections between learners. 
+                    </p>
+                </div>
+                <div class="gm-shallow">
+                    <span class="shallow-tag">Shallow Implementation</span>
+                    <p>
+                        One shallow method is to force all learners to participate and to do using a single form of expression, such as acting. Another involves the roles themselves; characters that are too one-dimensional. or that depict stereotypes can produce disconnection and perpetuate problematic biases.
+                    </p>
+                </div>
+                <div class="gm-reflection">
+                    <span class="reflection-tag">Reflection</span>
+                    <ul>
+                        <li>
+                            How can you encourage learners to listen and respond to each other during roleplay sessions?
+                        </li>
+                        <li>
+                            How might you incorporate non-acting roleplay into your classroom? Or blend acting and non-acting roleplaying?
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+            <!-- <hr class="dashed-break"> -->
+            <h2>Non-Digital Recipe Using Roleplay</h2>
+            <div class="gm-recipe">
+                <span class="recipe-tag">Recipe</span>
+                <p>
+                    <b>RNG Roleplay</b>
+                </p>
+                <p>
+                    Materials Required:
+                    <ul>
+                        <li>
+                            A variety of roles written on index cards
+                        </li>
+                        <li>
+                            A collection of scenarios related to the current topic or subject being learned
+                        </li>
+                        <li>
+                            A space to perform or share
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    The game is for each learner to get three index cards. On every card is a different role. These roles can be created ahead of time or co-created with your learners. Learners may not look at their index cards ahead of time.
+                </p>
+                <p>
+                    Allow the learners to divide into various groups based on medium of expression. Some may choose acting, others writing, drawing, etc. Allow them to switch groups as desired. This freedom promotes <b>autonomy</b>.
+                </p>
+                <p>
+                    Given the topic or subject the class is currently learning, randomly select a scenario and read it aloud. 
+                </p>
+                <p>
+                    The learners who have chosen to act will have five to ten minutes to come up with a skit given one of their random role cards.
+                </p>
+                <p>
+                    The non-acting learners will use this time to write or draw based on one of their own random role cards.
+                </p>
+                <p>
+                    After the five to ten minutes are up, have all the learners quickly share their expressions.
+                </p>
+                <p>
+                    Repeat as time and interest permit.
+                </p>
+            </div>
+        </section>
+        <!-- Act VI -->
         <section class="act act-VI">
             <h2>Act VI - Gameful Design</h2>
             <p>
@@ -195,6 +1457,7 @@
                 <b><em>How might you pursue intrinsic motivation in your own learning spaces?</em></b>
             </blockquote>
         </section>
+        <!-- References -->
         <section class="act references">
             <h1 style="text-align: center;">
                 Thank you so much for reading!
@@ -222,6 +1485,7 @@
             </ol>
         </section>
     </main>
+    <!-- Footer -->
     <footer>
         <p>
             This explorable explanation project was made with ❤️ for <a href="https://omscs.gatech.edu/cs-6460-educational-technology">CS6460 - Educational Technology at Georgia Tech.</a>
@@ -230,5 +1494,6 @@
             &copy; 2025 Brett Moran
         </p>
     </footer>
+    <script src="./js/main.js"></script>
 </body>
 </html>
