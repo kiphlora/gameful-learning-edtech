@@ -21,7 +21,7 @@ h1, h2, h3, h4 {
 .keyword {
     border-radius: 100px;
     padding: 2px 8px;
-    background-color: #488eaa;
+    background-color: #185972;
     color: white;
 }
 
@@ -71,13 +71,13 @@ tbody > tr {
     border: 3px solid #f5efb5;
 }
 table tbody .pill {
-    background-color: #2b586b;
+    background-color: #11242c;
     border-radius: 100px;
     text-align: center;
 }
 
 table thead .pill {
-    background-color: #488eaa;
+    background-color: #185972;
     border-radius: 100px;
     text-align: center;
 }
@@ -295,7 +295,7 @@ footer {
     text-decoration-line: underline;
     text-decoration-thickness: 2px;
     text-decoration-color: #3c7b96; */
-    background-color: #2b586b;
+    background-color: #11242c;
     color: white;
     padding: 5px 10px;
     border-radius: 10px;
@@ -313,7 +313,7 @@ footer {
     padding: 5px;
     margin: 2px;
     border-radius: 10px;
-    background-color: #2b586b;
+    background-color: #11242c;
 }
 
 #act-V-gm-links a:hover {
