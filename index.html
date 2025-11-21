@@ -79,7 +79,7 @@
             <p>
                 This explorable explanation seeks to build on <cite>Proulx et al. (2017)</cite>'s work by:
             </p>
-            <ul class="learning-goals-list">
+            <ol class="learning-goals-list">
                 <li>
                     <b>Contrasting</b> <span class="shallow-implementation">shallow</span> and <span class="meaningful-implementation">meaningful</span> implementations of select game mechanics as they relate to different psychological needs.
                 </li>
@@ -89,7 +89,7 @@
                 <li>
                     <b>Experimenting</b> with the game mechanics by making them come to life through play.
                 </li>
-            </ul>
+            </ol>
         </section>
         <!-- Act IV -->
         <section class="act act-IV">
@@ -174,7 +174,7 @@
             </table>
         </section>
         <!-- Act V -->
-        <section class="act act-V">
+        <section id="act-V" class="act act-V">
             <h2>Act V - Implementing Game Mechanics</h2>
             <p>
                 Select one of the game mechanics below to see more information about it:
@@ -195,7 +195,11 @@
         </section>
         <!-- Points section -->
         <section id="gm-points" class="act act-V gm-points">
-            <h2>Game Mechanic: <span class="gm-title">Points</span></h2>
+            <h2>
+                Game Mechanic: <a class="gm-title-anchor-back-to-all-gms" href="#act-V">
+                    <span class="gm-title">Points</span>
+                </a>
+            </h2>
             <!-- Intro to Points section -->
              <div class="gm-intro">
                 <p>
@@ -213,9 +217,9 @@
             <!-- Tab bar -->
             <div class="gm-tab-bar">
                 <!-- Tab buttons -->
-                <button class="gm-tab-option active" onclick="gmsdtTabSwitch(event, 'gm-points-tab', 'gm-points-autonomy')">Autonomy</button>
-                <button class="gm-tab-option" onclick="gmsdtTabSwitch(event, 'gm-points-tab', 'gm-points-competence')">Competence</button>
-                <button class="gm-tab-option" onclick="gmsdtTabSwitch(event, 'gm-points-tab', 'gm-points-relatedness')">Relatedness</button>
+                <button class="gm-tab-option gm-tab-option-points active" onclick="gmsdtTabSwitch(event, 'gm-tab-option-points', 'gm-points-tab', 'gm-points-autonomy')">Autonomy</button>
+                <button class="gm-tab-option gm-tab-option-points" onclick="gmsdtTabSwitch(event, 'gm-tab-option-points', 'gm-points-tab', 'gm-points-competence')">Competence</button>
+                <button class="gm-tab-option gm-tab-option-points" onclick="gmsdtTabSwitch(event, 'gm-tab-option-points', 'gm-points-tab', 'gm-points-relatedness')">Relatedness</button>
             </div>
             <!-- Autonomy tab content section -->
             <div id="gm-points-autonomy" class="gm-points-tab gm-tab active">
@@ -237,7 +241,7 @@
                 </div>
                 <div class="gm-reflection">
                     <span class="reflection-tag">Reflection</span>
-                    <ul>
+                    <ol>
                         <li>
                             How do learners have control over how they earn points?
                         </li>
@@ -247,7 +251,11 @@
                         <li>
                             How might the required competencies be met while allowing students to personalize their learning?
                         </li>
-                    </ul>
+                    </ol>
+                    <form class="reflection-area">
+                        <label for="gm-points-autonomy-reflection-box">Reflection Response:</label>
+  <textarea id="gm-points-autonomy-reflection-box" placeholder="Type your reflections here..."></textarea>
+                    </form>
                 </div> 
             </div>
             <!-- Competence tab content section -->
@@ -270,14 +278,14 @@
                 </div>
                 <div class="gm-reflection">
                     <span class="reflection-tag">Reflection</span>
-                    <ul>
+                    <ol>
                         <li>
                             How might points be used to scaffold one of your lessons or units?
                         </li>
                         <li>
                             From the perspective of one of your learners, what do you believe is likely to happen if you assign too many or too few points to different assignments? How might you balance them?
                         </li>
-                    </ul>
+                    </ol>
                 </div>
             </div>
             <!-- Relatedness tab content section -->
@@ -303,14 +311,14 @@
                 </div>
                 <div class="gm-reflection">
                     <span class="reflection-tag">Reflection</span>
-                    <ul>
+                    <ol>
                         <li>
                             How might you incorporate points in a way that reinforce collective progress?
                         </li>
                         <li>
                             How might you mitigate some of the challenges involved with both shared points and individual points when it comes to social dynamics in your own learning environment?
                         </li>
-                    </ul>
+                    </ol>
                 </div>
                 
             </div>
@@ -323,14 +331,14 @@
                 </p>
                 <p>
                     Materials Required:
-                    <ul>
+                    <ol>
                         <li>
                             Worksheets for your lessons
                         </li>
                         <li>
                             Progress Board for each group
                         </li>
-                    </ul>
+                    </ol>
                 </p>
                 <p>
                     In your classroom, to activate <b>autonomy</b>, provide a variety of worksheet options to each learner, focusing on one or more skills. To satisfy <b>competence</b>, assign point values to each worksheet based on difficulty. Then, to activate <b>relatedness</b>, allow the learners, upon completing the worksheet, to choose to keep the points for themselves to spend on individual rewards, or to contribute the points to their group or to the classroom overall for larger, collective rewards instead.
@@ -339,7 +347,11 @@
         </section>
         <!-- Badges section -->
         <section id="gm-badges" class="act act-V gm-badges">
-            <h2>Game Mechanic: <span class="gm-title">Badges</span></h2>
+            <h2>
+                Game Mechanic: <a class="gm-title-anchor-back-to-all-gms" href="#act-V">
+                    <span class="gm-title">Badges</span>
+                </a>
+            </h2>
             <!-- Intro to Badges section -->
              <div class="gm-intro">
                 <p>
@@ -360,9 +372,9 @@
             <!-- Tab bar -->
             <div class="gm-tab-bar">
                 <!-- Tab buttons -->
-                <button class="gm-tab-option active" onclick="gmsdtTabSwitch(event, 'gm-badges-tab', 'gm-badges-autonomy')">Autonomy</button>
-                <button class="gm-tab-option" onclick="gmsdtTabSwitch(event, 'gm-badges-tab', 'gm-badges-competence')">Competence</button>
-                <button class="gm-tab-option" onclick="gmsdtTabSwitch(event, 'gm-badges-tab', 'gm-badges-relatedness')">Relatedness</button>
+                <button class="gm-tab-option gm-tab-option-badges active" onclick="gmsdtTabSwitch(event, 'gm-tab-option-badges', 'gm-badges-tab', 'gm-badges-autonomy')">Autonomy</button>
+                <button class="gm-tab-option gm-tab-option-badges" onclick="gmsdtTabSwitch(event, 'gm-tab-option-badges', 'gm-badges-tab', 'gm-badges-competence')">Competence</button>
+                <button class="gm-tab-option gm-tab-option-badges" onclick="gmsdtTabSwitch(event, 'gm-tab-option-badges', 'gm-badges-tab', 'gm-badges-relatedness')">Relatedness</button>
             </div>
             <!-- Autonomy tab content section -->
             <div id="gm-badges-autonomy" class="gm-badges-tab gm-tab active">
@@ -385,7 +397,7 @@
                 </div>
                 <div class="gm-reflection">
                     <span class="reflection-tag">Reflection</span>
-                    <ul>
+                    <ol>
                         <li>
                             What are some other places where you've seen badges (or their equivalents)? What did the badges represent?
                         </li>
@@ -395,7 +407,7 @@
                         <li>
                             Some learners prefer less autonomy for the promise of discovery, whereas others may feel boxed-in by the structure; how might you balance these perspectives if you choose to build badges into your lessons?
                         </li>
-                    </ul>
+                    </ol>
                 </div> 
             </div>
             <!-- Competence tab content section -->
@@ -418,14 +430,14 @@
                 </div>
                 <div class="gm-reflection">
                     <span class="reflection-tag">Reflection</span>
-                    <ul>
+                    <ol>
                         <li>
                             How might you encourage (or assist) your learners with building their own scaffolding through the use of badges for topics they are interested in outside of the classroom?
                         </li>
                         <li>
                             How might you design badges (or co-design them) so they communicate progress even when learners make mistakes?
                         </li>
-                    </ul>
+                    </ol>
                 </div>
             </div>
             <!-- Relatedness tab content section -->
@@ -448,14 +460,14 @@
                 </div>
                 <div class="gm-reflection">
                     <span class="reflection-tag">Reflection</span>
-                    <ul>
+                    <ol>
                         <li>
                             For peer-based badges, how might you mitigate the potential effects of cliques while also ensuring the giving of the badge feels authentic to the learners?
                         </li>
                         <li>
                             How might badges foster empathy in your learners? How might badges impede empathy?
                         </li>
-                    </ul>
+                    </ol>
                 </div>
                 
             </div>
@@ -468,14 +480,14 @@
                 </p>
                 <p>
                     Materials Required:
-                    <ul>
+                    <ol>
                         <li>
                             Journals where learners can draw/write down/place their badges (earned and those still-to-be-earned)
                         </li>
                         <li>
                             Potential list of badges (could be generated by you, generated by the learners, or co-created all together).
                         </li>
-                    </ul>
+                    </ol>
                 </p>
                 <p>
                     To embrace <b>autonomy</b>, allow the learners to either choose (or design their own) collection of badges that resonate with them (their interests, ways they want to grow, etc.). Depending on the topic and age group, maybe have them start with 3 to 5 badges to strive for. 
@@ -490,7 +502,11 @@
         </section>
         <!-- Progression section -->
         <section id="gm-progression" class="act act-V gm-progression">
-            <h2>Game Mechanic: <span class="gm-title">Progression</span></h2>
+            <h2>
+                Game Mechanic: <a class="gm-title-anchor-back-to-all-gms" href="#act-V">
+                    <span class="gm-title">Progression</span>
+                </a>
+            </h2>
             <!-- Intro to Badges section -->
              <div class="gm-intro">
                 <p>
@@ -514,9 +530,9 @@
             <!-- Tab bar -->
             <div class="gm-tab-bar">
                 <!-- Tab buttons -->
-                <button class="gm-tab-option active" onclick="gmsdtTabSwitch(event, 'gm-progression-tab', 'gm-progression-autonomy')">Autonomy</button>
-                <button class="gm-tab-option" onclick="gmsdtTabSwitch(event, 'gm-progression-tab', 'gm-progression-competence')">Competence</button>
-                <button class="gm-tab-option" onclick="gmsdtTabSwitch(event, 'gm-progression-tab', 'gm-progression-relatedness')">Relatedness</button>
+                <button class="gm-tab-option gm-tab-option-progression active" onclick="gmsdtTabSwitch(event, 'gm-tab-option-progression', 'gm-progression-tab', 'gm-progression-autonomy')">Autonomy</button>
+                <button class="gm-tab-option gm-tab-option-progression" onclick="gmsdtTabSwitch(event, 'gm-tab-option-progression', 'gm-progression-tab', 'gm-progression-competence')">Competence</button>
+                <button class="gm-tab-option gm-tab-option-progression" onclick="gmsdtTabSwitch(event, 'gm-tab-option-progression', 'gm-progression-tab', 'gm-progression-relatedness')">Relatedness</button>
             </div>
             <!-- Autonomy tab content section -->
             <div id="gm-progression-autonomy" class="gm-progression-tab gm-tab active">
@@ -538,7 +554,7 @@
                 </div>
                 <div class="gm-reflection">
                     <span class="reflection-tag">Reflection</span>
-                    <ul>
+                    <ol>
                         <li>
                             Choose your own adventure can be a lot of extra work for educators, what alternatives can you think of for allowing for choice in progression?
                         </li>
@@ -548,7 +564,7 @@
                         <li>
                             Looking back at your own learning experiences, when have choices felt meaningful versus superficial?
                         </li>
-                    </ul>
+                    </ol>
                 </div> 
             </div>
             <!-- Competence tab content section -->
@@ -571,14 +587,14 @@
                 </div>
                 <div class="gm-reflection">
                     <span class="reflection-tag">Reflection</span>
-                    <ul>
+                    <ol>
                         <li>
                             How might you encourage learners to apply the skills they've mastered to a different domain?
                         </li>
                         <li>
                             How might a learner know they have grown or improved rather than simply completed an activity or challenge? How might you help them learn how to build proper scaffolding for themselves to promote lifelong learning?
                         </li>
-                    </ul>
+                    </ol>
                 </div>
             </div>
             <!-- Relatedness tab content section -->
@@ -601,14 +617,14 @@
                 </div>
                 <div class="gm-reflection">
                     <span class="reflection-tag">Reflection</span>
-                    <ul>
+                    <ol>
                         <li>
                             Scenario: One learner is struggling with a task and another is seeking a new challenge. How might you cultivate a culture of helpfulness while also protecting against the potential dynamic where the helping learner does the work for the one who is finding the task too difficult?
                         </li>
                         <li>
                             How might progression naturally create competition? How might that competition be healthy or unhealthy for different learners?
                         </li>
-                    </ul>
+                    </ol>
                 </div>
                 
             </div>
@@ -621,7 +637,7 @@
                 </p>
                 <p>
                     Materials Required:
-                    <ul>
+                    <ol>
                         <li>
                             Construction Paper
                         </li>
@@ -631,7 +647,7 @@
                         <li>
                             Post-It Notes (ideally different colors)
                         </li>
-                    </ul>
+                    </ol>
                 </p>
                 <p>
                     The goal of this "skill tree" is to give learners a guide for how they, and their peers, are progressing with different competencies during the course of the term.
@@ -658,7 +674,11 @@
         </section>
         <!-- Story section -->
         <section id="gm-story" class="act act-V gm-story">
-            <h2>Game Mechanic: <span class="gm-title">Story</span></h2>
+            <h2>
+                Game Mechanic: <a class="gm-title-anchor-back-to-all-gms" href="#act-V">
+                    <span class="gm-title">Story</span>
+                </a>
+            </h2>
             <!-- Intro to Badges section -->
              <div class="gm-intro">
                 <p>
@@ -679,9 +699,9 @@
             <!-- Tab bar -->
             <div class="gm-tab-bar">
                 <!-- Tab buttons -->
-                <button class="gm-tab-option active" onclick="gmsdtTabSwitch(event, 'gm-story-tab', 'gm-story-autonomy')">Autonomy</button>
-                <button class="gm-tab-option" onclick="gmsdtTabSwitch(event, 'gm-story-tab', 'gm-story-competence')">Competence</button>
-                <button class="gm-tab-option" onclick="gmsdtTabSwitch(event, 'gm-story-tab', 'gm-story-relatedness')">Relatedness</button>
+                <button class="gm-tab-option gm-tab-option-story active" onclick="gmsdtTabSwitch(event, 'gm-tab-option-story', 'gm-story-tab', 'gm-story-autonomy')">Autonomy</button>
+                <button class="gm-tab-option gm-tab-option-story" onclick="gmsdtTabSwitch(event, 'gm-tab-option-story', 'gm-story-tab', 'gm-story-competence')">Competence</button>
+                <button class="gm-tab-option gm-tab-option-story" onclick="gmsdtTabSwitch(event, 'gm-tab-option-story', 'gm-story-tab', 'gm-story-relatedness')">Relatedness</button>
             </div>
             <!-- Autonomy tab content section -->
             <div id="gm-story-autonomy" class="gm-story-tab gm-tab active">
@@ -703,7 +723,7 @@
                 </div>
                 <div class="gm-reflection">
                     <span class="reflection-tag">Reflection</span>
-                    <ul>
+                    <ol>
                         <li>
                             How might you guide a classroom or teams in creating a shared world where everyone can contribute and build tasks and challenges that fit in with the narrative?
                         </li>
@@ -713,7 +733,7 @@
                         <li>
                             How might you design activities that help learners feel more connected to the narrative?
                         </li>
-                    </ul>
+                    </ol>
                 </div> 
             </div>
             <!-- Competence tab content section -->
@@ -736,14 +756,14 @@
                 </div>
                 <div class="gm-reflection">
                     <span class="reflection-tag">Reflection</span>
-                    <ul>
+                    <ol>
                         <li>
                             How might a story reinforce or distract from learning goals?
                         </li>
                         <li>
                             How does the narrative provide deeper insights into the content being taught?
                         </li>
-                    </ul>
+                    </ol>
                 </div>
             </div>
             <!-- Relatedness tab content section -->
@@ -766,14 +786,14 @@
                 </div>
                 <div class="gm-reflection">
                     <span class="reflection-tag">Reflection</span>
-                    <ul>
+                    <ol>
                         <li>
                             How might you allow for shared storytelling narrative that also feels safe for all learners? What supports learners in co-creating stories?
                         </li>
                         <li>
                             How might you foster a shared world where learners recognize each other's discoveries and actions in it?
                         </li>
-                    </ul>
+                    </ol>
                 </div>
                 
             </div>
@@ -786,14 +806,14 @@
                 </p>
                 <p>
                     Materials Required:
-                    <ul>
+                    <ol>
                         <li>
                             Index Cards
                         </li>
                         <li>
                             Tape
                         </li>
-                    </ul>
+                    </ol>
                 </p>
                 <p>
                     Break the learners into groups of 3 to 5 and give each group five index cards.
@@ -823,7 +843,11 @@
         </section>
         <!-- Co-design section -->
         <section id="gm-co-design" class="act act-V gm-co-design">
-            <h2>Game Mechanic: <span class="gm-title">Co-design</span></h2>
+            <h2>
+                Game Mechanic: <a class="gm-title-anchor-back-to-all-gms" href="#act-V">
+                    <span class="gm-title">Co-design</span>
+                </a>
+            </h2>
             <!-- Intro to Badges section -->
              <div class="gm-intro">
                 <p>
@@ -841,9 +865,9 @@
             <!-- Tab bar -->
             <div class="gm-tab-bar">
                 <!-- Tab buttons -->
-                <button class="gm-tab-option active" onclick="gmsdtTabSwitch(event, 'gm-co-design-tab', 'gm-co-design-autonomy')">Autonomy</button>
-                <button class="gm-tab-option" onclick="gmsdtTabSwitch(event, 'gm-co-design-tab', 'gm-co-design-competence')">Competence</button>
-                <button class="gm-tab-option" onclick="gmsdtTabSwitch(event, 'gm-co-design-tab', 'gm-co-design-relatedness')">Relatedness</button>
+                <button class="gm-tab-option gm-tab-option-co-design active" onclick="gmsdtTabSwitch(event, 'gm-tab-option-co-design', 'gm-co-design-tab', 'gm-co-design-autonomy')">Autonomy</button>
+                <button class="gm-tab-option gm-tab-option-co-design" onclick="gmsdtTabSwitch(event, 'gm-tab-option-co-design', 'gm-co-design-tab', 'gm-co-design-competence')">Competence</button>
+                <button class="gm-tab-option gm-tab-option-co-design" onclick="gmsdtTabSwitch(event, 'gm-tab-option-co-design', 'gm-co-design-tab', 'gm-co-design-relatedness')">Relatedness</button>
             </div>
             <!-- Autonomy tab content section -->
             <div id="gm-co-design-autonomy" class="gm-co-design-tab gm-tab active">
@@ -865,14 +889,14 @@
                 </div>
                 <div class="gm-reflection">
                     <span class="reflection-tag">Reflection</span>
-                    <ul>
+                    <ol>
                         <li>
                             What are some major issues you can see with trying to implement co-design into your lessons? How might you mitigate some of these issues?
                         </li>
                         <li>
                             How might you guide learners during co-designing so they see the value of different pedagogical tools or approaches without being too steeped in the theory?
                         </li>
-                    </ul>
+                    </ol>
                 </div> 
             </div>
             <!-- Competence tab content section -->
@@ -895,14 +919,14 @@
                 </div>
                 <div class="gm-reflection">
                     <span class="reflection-tag">Reflection</span>
-                    <ul>
+                    <ol>
                         <li>
                             How might you embed tiny experiments into co-design sessions so learners develop skills of iterating and testing ideas quickly related to the topics they are learning?
                         </li>
                         <li>
                             How might co-designing make your own design skills better?
                         </li>
-                    </ul>
+                    </ol>
                 </div>
             </div>
             <!-- Relatedness tab content section -->
@@ -925,14 +949,14 @@
                 </div>
                 <div class="gm-reflection">
                     <span class="reflection-tag">Reflection</span>
-                    <ul>
+                    <ol>
                         <li>
                             What rules might you incorporate to make it so learners can feel safe and connecting during co-design?
                         </li>
                         <li>
                             How might co-design reinforce any cliques or other kinds of social dynamics? How might you mitigate negative effects of those dynamics?
                         </li>
-                    </ul>
+                    </ol>
                 </div>
                 
             </div>
@@ -945,14 +969,14 @@
                 </p>
                 <p>
                     Materials Required:
-                    <ul>
+                    <ol>
                         <li>
                             The current syllabus
                         </li>
                         <li>
                             Index cards
                         </li>
-                    </ul>
+                    </ol>
                 </p>
                 <p>
                     One recommendation is experimenting with assessments.                  
@@ -973,7 +997,11 @@
         </section>
         <!-- Collaboration section -->
         <section id="gm-collaboration" class="act act-V gm-collaboration">
-            <h2>Game Mechanic: <span class="gm-title">Collaboration</span></h2>
+            <h2>
+                Game Mechanic: <a class="gm-title-anchor-back-to-all-gms" href="#act-V">
+                    <span class="gm-title">Collaboration</span>
+                </a>
+            </h2>
             <!-- Intro to Badges section -->
              <div class="gm-intro">
                 <p>
@@ -991,9 +1019,9 @@
             <!-- Tab bar -->
             <div class="gm-tab-bar">
                 <!-- Tab buttons -->
-                <button class="gm-tab-option active" onclick="gmsdtTabSwitch(event, 'gm-collaboration-tab', 'gm-collaboration-autonomy')">Autonomy</button>
-                <button class="gm-tab-option" onclick="gmsdtTabSwitch(event, 'gm-collaboration-tab', 'gm-collaboration-competence')">Competence</button>
-                <button class="gm-tab-option" onclick="gmsdtTabSwitch(event, 'gm-collaboration-tab', 'gm-collaboration-relatedness')">Relatedness</button>
+                <button class="gm-tab-option gm-tab-option-collaboration active" onclick="gmsdtTabSwitch(event, 'gm-tab-option-collaboration', 'gm-collaboration-tab', 'gm-collaboration-autonomy')">Autonomy</button>
+                <button class="gm-tab-option gm-tab-option-collaboration" onclick="gmsdtTabSwitch(event, 'gm-tab-option-collaboration', 'gm-collaboration-tab', 'gm-collaboration-competence')">Competence</button>
+                <button class="gm-tab-option gm-tab-option-collaboration" onclick="gmsdtTabSwitch(event, 'gm-tab-option-collaboration', 'gm-collaboration-tab', 'gm-collaboration-relatedness')">Relatedness</button>
             </div>
             <!-- Autonomy tab content section -->
             <div id="gm-collaboration-autonomy" class="gm-collaboration-tab gm-tab active">
@@ -1015,14 +1043,14 @@
                 </div>
                 <div class="gm-reflection">
                     <span class="reflection-tag">Reflection</span>
-                    <ul>
+                    <ol>
                         <li>
                             What are some benefits and drawbacks to allowing learners to choose their own groups?
                         </li>
                         <li>
                             How might you provide modeling for your learners so they can learn (or better understand) how to work in groups? How does this modeling support their independence and interdependence?
                         </li>
-                    </ul>
+                    </ol>
                 </div> 
             </div>
             <!-- Competence tab content section -->
@@ -1046,14 +1074,14 @@
                 </div>
                 <div class="gm-reflection">
                     <span class="reflection-tag">Reflection</span>
-                    <ul>
+                    <ol>
                         <li>
                             With respect to skill development and learning competencies, how does collaborative learning differ from individual learning? How are they similar?
                         </li>
                         <li>
                             How might you design a collaborative experiment that allows learners to practice skills that would be difficult for them to practice on their own?
                         </li>
-                    </ul>
+                    </ol>
                 </div>
             </div>
             <!-- Relatedness tab content section -->
@@ -1079,14 +1107,14 @@
                 </div>
                 <div class="gm-reflection">
                     <span class="reflection-tag">Reflection</span>
-                    <ul>
+                    <ol>
                         <li>
                             What are some norms or skills you'd like your learners to incorporate into their group dynamics? What are some you'd like them to avoid?
                         </li>
                         <li>
                             Sometimes groups just don't work for a variety of reasons, how might you mitigate issues within these groups and how they might affect the broader learning space?
                         </li>
-                    </ul>
+                    </ol>
                 </div>
                 
             </div>
@@ -1099,14 +1127,14 @@
                 </p>
                 <p>
                     Materials Required:
-                    <ul>
+                    <ol>
                         <li>
                             Post-It Notes
                         </li>
                         <li>
                             Colored Pencils/Markers
                         </li>
-                    </ul>
+                    </ol>
                 </p>
                 <p>
                     The goal of this project is to practice collaborative ideation.
@@ -1127,7 +1155,11 @@
         </section>
         <!-- Competition section -->
         <section id="gm-competition" class="act act-V gm-competition">
-            <h2>Game Mechanic: <span class="gm-title">Competition</span></h2>
+            <h2>
+                Game Mechanic: <a class="gm-title-anchor-back-to-all-gms" href="#act-V">
+                    <span class="gm-title">Competition</span>
+                </a>
+            </h2>
             <!-- Intro to Competition section -->
              <div class="gm-intro">
                 <p>
@@ -1145,9 +1177,9 @@
             <!-- Tab bar -->
             <div class="gm-tab-bar">
                 <!-- Tab buttons -->
-                <button class="gm-tab-option active" onclick="gmsdtTabSwitch(event, 'gm-competition-tab', 'gm-competition-autonomy')">Autonomy</button>
-                <button class="gm-tab-option" onclick="gmsdtTabSwitch(event, 'gm-competition-tab', 'gm-competition-competence')">Competence</button>
-                <button class="gm-tab-option" onclick="gmsdtTabSwitch(event, 'gm-competition-tab', 'gm-competition-relatedness')">Relatedness</button>
+                <button class="gm-tab-option gm-tab-option-competition active" onclick="gmsdtTabSwitch(event, 'gm-tab-option-competition', 'gm-competition-tab', 'gm-competition-autonomy')">Autonomy</button>
+                <button class="gm-tab-option gm-tab-option-competition" onclick="gmsdtTabSwitch(event, 'gm-tab-option-competition', 'gm-competition-tab', 'gm-competition-competence')">Competence</button>
+                <button class="gm-tab-option gm-tab-option-competition" onclick="gmsdtTabSwitch(event, 'gm-tab-option-competition', 'gm-competition-tab', 'gm-competition-relatedness')">Relatedness</button>
             </div>
             <!-- Autonomy tab content section -->
             <div id="gm-competition-autonomy" class="gm-competition-tab gm-tab active">
@@ -1169,14 +1201,14 @@
                 </div>
                 <div class="gm-reflection">
                     <span class="reflection-tag">Reflection</span>
-                    <ul>
+                    <ol>
                         <li>
                             How do your learners engage with competition? Do they find it energizing or draining? If they have a choice in competing, does their viewpoint change?
                         </li>
                         <li>
                             What does success mean to you? To your learners? If winning is important, why? If winning is not important, why?
                         </li>
-                    </ul>
+                    </ol>
                 </div> 
             </div>
             <!-- Competence tab content section -->
@@ -1199,14 +1231,14 @@
                 </div>
                 <div class="gm-reflection">
                     <span class="reflection-tag">Reflection</span>
-                    <ul>
+                    <ol>
                         <li>
                             How do your learners interpret outcomes? As feedback on how to improve, as praise or criticism if they performed or didn't perform well, or something else?
                         </li>
                         <li>
                             When looking at fairness, how might you design a competition that helps to mitigate inequalities among your learners?
                         </li>
-                    </ul>
+                    </ol>
                 </div>
             </div>
             <!-- Relatedness tab content section -->
@@ -1229,7 +1261,7 @@
                 </div>
                 <div class="gm-reflection">
                     <span class="reflection-tag">Reflection</span>
-                    <ul>
+                    <ol>
                         <li>
                             How might teams promote mutual respect? How might them undermine it? What makes for a good team?
                         </li>
@@ -1239,7 +1271,7 @@
                         <li>
                             When are rivalries healthy? When are they unhealthy?
                         </li>
-                    </ul>
+                    </ol>
                 </div>
                 
             </div>
@@ -1252,24 +1284,24 @@
                 </p>
                 <p>
                     Materials Required:
-                    <ul>
+                    <ol>
                         <li>
                             Project Board with a few choices for competitions.
                         </li>
                         <li>
                             Post-it Notes where learners can write their names and stick them on the project they want to compete in.
                         </li>
-                    </ul>
+                    </ol>
                 </p>
                 <p>
                     The overall goal is to provide a few different projects/competitions for learners to participate in. 
 
                     To provide <b>autonomy</b>, the learners can choose which project to participate in. Ideally, they will have the ability to choose between:
-                    <ul>
+                    <ol>
                         <li>Competing against themselves</li>
                         <li>Competing individually against others</li>
                         <li>Competing as a team against other teams</li>
-                    </ul>
+                    </ol>
                 </p>
                 <p>
                     To promote <b>competence</b>, include discussions that focus on learning from mistakes, celebrating creative solutions or strategies, and allowing learners to reflect on their own growth through the competition.
@@ -1281,7 +1313,11 @@
         </section>
         <!-- Roleplay section -->
         <section id="gm-roleplay" class="act act-V gm-roleplay">
-            <h2>Game Mechanic: <span class="gm-title">Roleplay</span></h2>
+            <h2>
+                Game Mechanic: <a class="gm-title-anchor-back-to-all-gms" href="#act-V">
+                    <span class="gm-title">Roleplay</span>
+                </a>
+            </h2>
             <!-- Intro to Roleplay section -->
              <div class="gm-intro">
                 <p>
@@ -1299,9 +1335,9 @@
             <!-- Tab bar -->
             <div class="gm-tab-bar">
                 <!-- Tab buttons -->
-                <button class="gm-tab-option active" onclick="gmsdtTabSwitch(event, 'gm-roleplay-tab', 'gm-roleplay-autonomy')">Autonomy</button>
-                <button class="gm-tab-option" onclick="gmsdtTabSwitch(event, 'gm-roleplay-tab', 'gm-roleplay-competence')">Competence</button>
-                <button class="gm-tab-option" onclick="gmsdtTabSwitch(event, 'gm-roleplay-tab', 'gm-roleplay-relatedness')">Relatedness</button>
+                <button class="gm-tab-option gm-tab-option-roleplay active" onclick="gmsdtTabSwitch(event, 'gm-tab-option-roleplay', 'gm-roleplay-tab', 'gm-roleplay-autonomy')">Autonomy</button>
+                <button class="gm-tab-option gm-tab-option-roleplay" onclick="gmsdtTabSwitch(event, 'gm-tab-option-roleplay', 'gm-roleplay-tab', 'gm-roleplay-competence')">Competence</button>
+                <button class="gm-tab-option gm-tab-option-roleplay" onclick="gmsdtTabSwitch(event, 'gm-tab-option-roleplay', 'gm-roleplay-tab', 'gm-roleplay-relatedness')">Relatedness</button>
             </div>
             <!-- Autonomy tab content section -->
             <div id="gm-roleplay-autonomy" class="gm-roleplay-tab gm-tab active">
@@ -1323,14 +1359,14 @@
                 </div>
                 <div class="gm-reflection">
                     <span class="reflection-tag">Reflection</span>
-                    <ul>
+                    <ol>
                         <li>
                             Some learners can "get into character" more easily than others. How might you encourage or help those who may be less comfortable to participate?
                         </li>
                         <li>
                             How flexible might you allow the roleplay scenario to be? How would you set ground rules ahead of time for establishing comfort and boundaries?
                         </li>
-                    </ul>
+                    </ol>
                 </div> 
             </div>
             <!-- Competence tab content section -->
@@ -1353,14 +1389,14 @@
                 </div>
                 <div class="gm-reflection">
                     <span class="reflection-tag">Reflection</span>
-                    <ul>
+                    <ol>
                         <li>
                             How might you design and develop a role to allow learners to ease into the character?
                         </li>
                         <li>
                             How might you encourage learners to reflect on and give reasoning for their decision-making while in-character?
                         </li>
-                    </ul>
+                    </ol>
                 </div>
             </div>
             <!-- Relatedness tab content section -->
@@ -1383,14 +1419,14 @@
                 </div>
                 <div class="gm-reflection">
                     <span class="reflection-tag">Reflection</span>
-                    <ul>
+                    <ol>
                         <li>
                             How can you encourage learners to listen and respond to each other during roleplay sessions?
                         </li>
                         <li>
                             How might you incorporate non-acting roleplay into your classroom? Or blend acting and non-acting roleplaying?
                         </li>
-                    </ul>
+                    </ol>
                 </div>
                 
             </div>
@@ -1403,7 +1439,7 @@
                 </p>
                 <p>
                     Materials Required:
-                    <ul>
+                    <ol>
                         <li>
                             A variety of roles written on index cards
                         </li>
@@ -1413,7 +1449,7 @@
                         <li>
                             A space to perform or share
                         </li>
-                    </ul>
+                    </ol>
                 </p>
                 <p>
                     The game is for each learner to get three index cards. On every card is a different role. These roles can be created ahead of time or co-created with your learners. Learners may not look at their index cards ahead of time.

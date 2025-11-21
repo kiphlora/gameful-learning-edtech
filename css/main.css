@@ -199,7 +199,7 @@ footer {
     flex: 1;
     padding: 10px;
     border: none;
-    /* border: 1px solid #aaaaaa; */
+    border: 1px solid #aaaaaa;
     border-bottom: 3px solid #aaaaaa;
     background-color: #eeeeee;
     cursor: pointer;
@@ -228,8 +228,11 @@ footer {
 }
 
 /* .gm-tab-option is the tab button itself */
+
+
 .gm-tab-option.active {
     background-color: #e0ca03;
+    border: 1px solid #52a7cc;
     border-bottom: 3px solid #52a7cc;
     font-weight: bold;
 }
@@ -290,28 +293,43 @@ footer {
     background-color: transparent;
 }
 
-.gm-title {
+/* .gm-title { */
     /* text-decoration: wavy;
     text-decoration-line: underline;
     text-decoration-thickness: 2px;
     text-decoration-color: #3c7b96; */
-    background-color: #11242c;
+    /* background-color: #11242c;
     color: white;
     padding: 5px 10px;
     border-radius: 10px;
+} */
+
+.gm-title-anchor-back-to-all-gms {
+    text-decoration: none;
+    color: white;
+    background-color: #11242c;
+    padding: 6px 10px;
+    border-radius: 10px;
+}
+
+.gm-title-anchor-back-to-all-gms:hover {
+    background-color: #3c7b96;
 }
 
 #act-V-gm-links {
     display: flex;
     align-items: center;
     flex-flow: wrap;
+    justify-content: center;
 }
 
 #act-V-gm-links a {
     color: white;
     text-decoration: none;
-    padding: 5px;
-    margin: 2px;
+    width: 110px;
+    padding: 6px 10px;
+    text-align: center;
+    margin: 10px 10px;
     border-radius: 10px;
     background-color: #11242c;
 }
@@ -319,8 +337,6 @@ footer {
 #act-V-gm-links a:hover {
     color: white;
     text-decoration: none;
-    padding: 5px;
-    margin: 2px;
     border-radius: 10px;
     background-color: #3c7b96;
 }
@@ -366,6 +382,33 @@ footer {
 }
 
 
+.reflection-area {
+    margin: 20px 0;
+    padding: 16px;
+    border: 2px solid #d4d4d4;
+    border-radius: 10px;
+    background: #f9f9ff;
+    max-width: 600px;
+}
 
+.reflection-area label {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+#gm-points-autonomy-reflection-box {
+    width: 100%;
+    min-height: 80px;
+    margin-top: 8px;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+    box-sizing: border-box;
+    resize: vertical;          /* no manual resize handle */
+    overflow-y: hidden;    /* important: hide scrollbar */
+    background: #ffffff;
+    line-height: 1.4;
+}
 
 
