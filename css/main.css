@@ -304,6 +304,15 @@ footer {
     background-color: transparent;
 }
 
+.info-callout {
+    border-radius: 10px;
+    /* padding: 10px 20px 20px 20px; */
+    padding: 20px;
+    margin: 10px 0px;
+    background-color: #00000022;
+    border-left: 5px solid #000000;
+}
+
 /* .gm-title { */
     /* text-decoration: wavy;
     text-decoration-line: underline;
@@ -333,6 +342,33 @@ a.gm-title-anchor-back-to-all-gms:hover {
         transform 0.2s ease;
     
 }
+
+.gm-section-nav {
+    padding: 0;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    background-color: transparent;
+    font-size: 1rem;
+}
+
+.gm-section-nav a {
+    background-color: #11242c88;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+/* .gm-title2 {
+    background-color: #11242c66;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 10px;
+    display: inline-block;
+} */
 
 #act-V-gm-links {
     display: flex;
@@ -436,11 +472,12 @@ a.gm-title-anchor-back-to-all-gms:hover {
 } */
 
 /* 
-Inspiration for the reflection box style came from:
+Inspiration and some of the code for the reflection box style came from:
 https://codepen.io/steinvc/pen/nOPLgv
 */
 .reflection-box {
 	overflow:hidden;
+    min-height: 4rem;
     width: 82%;
 	background-color:#FFF;
 	color:#222;
@@ -505,8 +542,9 @@ figcaption {
 }
 
 .gm-card {
-    /* border: 2px solid white; */
-    background-color: #11242c;
+    border: 2px solid transparent;
+    background-color: #003044;
+    /* background-color: #11242c; */
     box-shadow: 5px 5px 10px 0px #333;
     /* background-color: #22495a; */
     border-radius: 40px 10px;
@@ -635,8 +673,17 @@ figcaption {
 }
 
 .gm-card.active {
-    background-color: #185972;
+    /* border: 2px solid #c5b100; */
+    /* border-top: 2px solid transparent; */
+    /* border-left: 2px solid transparent; */
+    /* background-color: #003044; */
+    background-color: #11242c;
+    box-shadow: none;
+    transform: translateY(-2px);
+    transition: 
+        transform 0.2s ease;
 }
+
 
 /* #notification-box {
     position: fixed;

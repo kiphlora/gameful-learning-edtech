@@ -313,6 +313,12 @@ const miniBadgeImgs = {
     hidden: "/assets/badges/gm-badge-hidden.png",
     partial: "/assets/badges/gm-checkbox-yellow.png",
     complete: "/assets/badges/gm-checkbox-green.png",
+    sectionMeaningfulHidden: "/assets/badges/gm-checkbox-can-check-meaningful.png",
+    sectionShallowHidden: "/assets/badges/gm-checkbox-can-check-shallow.png",
+    sectionReflectionHidden: "/assets/badges/gm-checkbox-can-check-reflection.png",
+    sectionMeaningfulComplete: "/assets/badges/gm-checkbox-meaningful.png",
+    sectionShallowComplete: "/assets/badges/gm-checkbox-shallow.png",
+    sectionReflectionComplete: "/assets/badges/gm-checkbox-reflection.png",
     sectionHidden: "/assets/badges/gm-checkbox-can-check.png"
 }
 
@@ -338,8 +344,7 @@ function clearData() {
     document.querySelectorAll(".reflection-box").forEach(elem => {
         elem.value = "";
         elem.placeholder = "Use this space for notes or nothing at all...";
-        elem.style.height = "auto";
-        elem.rows = "4";
+        elem.style.height = "";
         autoResize(elem);
     });
 
@@ -358,7 +363,14 @@ function clearData() {
     // remove "completed" class from all the section circles
     document.querySelectorAll(".mark-progress").forEach(elem => {
         elem.classList.remove("completed");
-        elem.querySelector("img").src = miniBadgeImgs.sectionHidden;
+        if (elem.id.includes('meaningful'))
+            elem.querySelector("img").src = miniBadgeImgs.sectionMeaningfulHidden;
+        else if (elem.id.includes('shallow'))
+            elem.querySelector("img").src = miniBadgeImgs.sectionShallowHidden;
+        else if (elem.id.includes('reflection'))
+            elem.querySelector("img").src = miniBadgeImgs.sectionReflectionHidden;
+        else
+            elem.querySelector("img").src = miniBadgeImgs.sectionHidden;
     });
 
     // update visuals and localStorage
@@ -442,7 +454,15 @@ function toggleBadge(event, badgeID, badgeType) {
     }
 
     toggleCompleteElement.classList.toggle("completed");
-    toggleCompleteElement.querySelector("img").src = toggleCompleteElement.classList.contains("completed") ? miniBadgeImgs.complete : miniBadgeImgs.sectionHidden;
+    if (toggleCompleteElement.id.includes('meaningful')) {
+        toggleCompleteElement.querySelector("img").src = toggleCompleteElement.classList.contains("completed") ? miniBadgeImgs.sectionMeaningfulComplete : miniBadgeImgs.sectionMeaningfulHidden;
+    }
+    else if (toggleCompleteElement.id.includes('shallow')) {
+        toggleCompleteElement.querySelector("img").src = toggleCompleteElement.classList.contains("completed") ? miniBadgeImgs.sectionShallowComplete : miniBadgeImgs.sectionShallowHidden;
+    }
+    else if (toggleCompleteElement.id.includes('reflection')) {
+        toggleCompleteElement.querySelector("img").src = toggleCompleteElement.classList.contains("completed") ? miniBadgeImgs.sectionReflectionComplete : miniBadgeImgs.sectionReflectionHidden;
+    }
 
     updateMiniBadgeProgress();
 }
@@ -673,7 +693,17 @@ function loadData() {
                 elem.classList.remove("completed");
             }
         }
-        elem.querySelector("img").src = elem.classList.contains("completed") ? miniBadgeImgs.complete : miniBadgeImgs.sectionHidden;
+
+        // add display correct image based on completion status and type
+        if (elem.id.includes('meaningful')) {
+            elem.querySelector("img").src = elem.classList.contains("completed") ? miniBadgeImgs.sectionMeaningfulComplete : miniBadgeImgs.sectionMeaningfulHidden;
+        }
+        else if (elem.id.includes('shallow')) {
+            elem.querySelector("img").src = elem.classList.contains("completed") ? miniBadgeImgs.sectionShallowComplete : miniBadgeImgs.sectionShallowHidden;
+        }
+        else if (elem.id.includes('reflection')) {
+            elem.querySelector("img").src = elem.classList.contains("completed") ? miniBadgeImgs.sectionReflectionComplete : miniBadgeImgs.sectionReflectionHidden;
+        }
     });
 }
 

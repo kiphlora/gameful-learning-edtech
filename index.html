@@ -116,25 +116,28 @@
             </p>
             
             <h2>How to Read the Game Mechanics Cards</h2>
-            <img src="assets/images/tutorial-gm.png" alt="Game Mechanics Card Tutorial" style="width: 450px; margin: 0 auto; display: block;">
+            <img src="assets/images/tutorial-gm.png" alt="Game Mechanics Card Tutorial" style="width: 100%; padding: 0; margin: 0 auto; display: block;">
+            <br>
             <p>To encourage both autonomy and competence, the cards allow you to visit the mechanics in any order you want, and to track progress using the earned badges.</p>
 
-            <h2>A Note About Your Data Before Continuing</h2>
-            <p>
-                Your progress and reflections are saved automatically in your browser's <b>local storage</b>. This means that your data are yours and yours alone. 
-            </p>
-            <p>
-                It also means that if you clear browser history, you will likely lose your data. And, that you can't share your progress across different devices or browsers. 
-            </p>
-            <p>
-                You can clear or download your data at any time using the buttons below.
-            </p>
-            <p>
-                <b>Important:</b> If you clear your data, there is no way to recover it. If you want to keep a copy of your reflections, please download your data first.
-            </p>
-            <div class="data-buttons-container">
-                <button id="download-data" onclick="downloadData()">Download Reflections</button>
-                <button id="clear-data" onclick="clearData()">Delete All Progress and Reflections</button>
+            <div class="info-callout">
+                <h2>A Note About Your Data Before Continuing</h2>
+                <p>
+                    Your progress and reflections are saved automatically in your browser's <b>local storage</b>. This means that your data are yours and yours alone. 
+                </p>
+                <p>
+                    It also means that if you clear browser history, you will likely lose your data. And, that you can't share your progress across different devices or browsers. 
+                </p>
+                <p>
+                    You can <b>download</b> or <b>delete</b> your data at any time using the buttons below.
+                </p>
+                <p>
+                    <b>Important:</b> If you delete your data, there is no way to recover it. If you want to keep a copy of your reflections, please download your data first.
+                </p>
+                <div class="data-buttons-container">
+                    <button id="download-data" onclick="downloadData()">Download Reflections</button>
+                    <button id="clear-data" onclick="clearData()">Delete All Progress and Reflections</button>
+                </div>
             </div>
 
             <h2 id="gm-card-hub">Game Mechanics Cards</h2>
@@ -143,6 +146,7 @@
             </p>
             
             <div class="gm-cards">
+                <!-- Note: The book (📘) and pencil (✏️) emojis were borrowed from: https://emojicombos.com/ -->
                 
                 <div class="gm-card" onclick="gmSectionSwitch(event, 'gm-points')">
                     <div>
@@ -417,7 +421,7 @@
                 In games, <b>points</b> are a very commonly used mechanic. Most often they are coupled with <b>competition</b> to determine overall winners using the accumulation of points earned through various in-game actions. A common implementation is the <em>High Score</em>, more common in older video games and arcade games. High scores are  essentially a form of <em>Leaderboard</em>.
             </p>            
              <!-- <hr class="dashed-break"> -->
-             <h2>Using Points to Address SDT Needs</h2>
+             <h2 id="address-sdt-needs-points">Using Points to Address SDT Needs</h2>
             <!-- Tab bar -->
             <div class="gm-tab-bar">
                 <!-- Tab buttons -->
@@ -437,7 +441,7 @@
                             Meaningful Implementation
                         </span>
                         <span onclick="toggleBadge(event, 'points-autonomy-reading', 'reading')" id="mark-progress-points-autonomy-reading-meaningful" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-meaningful.png" alt="Mark as read">
                         </span>
                     </div>
                     <p>
@@ -450,7 +454,7 @@
                             Shallow Implementation
                         </span>
                         <span onclick="toggleBadge(event, 'points-autonomy-reading', 'reading')" id="mark-progress-points-autonomy-reading-shallow" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-shallow.png" alt="Mark as read">
                         </span>
                     </div>
                     <p>
@@ -463,7 +467,7 @@
                             Reflection
                         </span>
                         <span onclick="toggleBadge(event, 'points-autonomy-writing', 'writing')" id="mark-progress-points-autonomy-writing-reflection" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-reflection.png" alt="Mark as read">
                         </span>
                     </div>
                     <ol>
@@ -482,6 +486,14 @@
                     
                     </form>
                 </div>
+                <div class="gm-section-nav">
+                    <a class="gm-title-anchor-back-to-all-gms" href="#address-sdt-needs-points">
+                        <span class="gm-title2">^ Return to SDT needs ^</span>
+                    </a>
+                    <a class="gm-title-anchor-back-to-all-gms" href="#gm-card-hub">
+                        <span class="gm-title2">^ Return to all game mechanics ^</span>
+                    </a>
+                </div>
             </div>
             <!-- Competence tab content section -->
             <div id="gm-points-competence" class="gm-points-tab gm-tab">
@@ -495,7 +507,7 @@
                             Meaningful Implementation
                         </span>
                         <span onclick="toggleBadge(event, 'points-competence-reading', 'reading')" id="mark-progress-points-competence-reading-meaningful" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-meaningful.png" alt="Mark as read">
                         </span>
                     </div>
                     <p>
@@ -508,7 +520,7 @@
                             Shallow Implementation
                         </span>
                         <span onclick="toggleBadge(event, 'points-competence-reading', 'reading')" id="mark-progress-points-competence-reading-shallow" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-shallow.png" alt="Mark as read">
                         </span>
                     </div>
                     <p>
@@ -521,7 +533,7 @@
                             Reflection
                         </span>
                         <span onclick="toggleBadge(event, 'points-competence-writing', 'writing')" id="mark-progress-points-competence-writing-reflection" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-reflection.png" alt="Mark as read">
                         </span>
                     </div>
                     <ol>
@@ -537,6 +549,14 @@
                     
                     </form>
                 </div>
+                <div class="gm-section-nav">
+                    <a class="gm-title-anchor-back-to-all-gms" href="#address-sdt-needs-points">
+                        <span class="gm-title2">^ Return to SDT needs ^</span>
+                    </a>
+                    <a class="gm-title-anchor-back-to-all-gms" href="#gm-card-hub">
+                        <span class="gm-title2">^ Return to all game mechanics ^</span>
+                    </a>
+                </div>
             </div>
             <!-- Relatedness tab content section -->
             <div id="gm-points-relatedness" class="gm-points-tab gm-tab">
@@ -550,7 +570,7 @@
                             Meaningful Implementation
                         </span>
                         <span onclick="toggleBadge(event, 'points-relatedness-reading', 'reading')" id="mark-progress-points-relatedness-reading-meaningful" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-meaningful.png" alt="Mark as read">
                         </span>
                     </div>
                     <p>
@@ -563,7 +583,7 @@
                             Shallow Implementation
                         </span>
                         <span onclick="toggleBadge(event, 'points-relatedness-reading', 'reading')" id="mark-progress-points-relatedness-reading-shallow" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-shallow.png" alt="Mark as read">
                         </span>
                     </div>
                     <p>
@@ -579,7 +599,7 @@
                             Reflection
                         </span>
                         <span onclick="toggleBadge(event, 'points-relatedness-writing', 'writing')" id="mark-progress-points-relatedness-writing-reflection" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-reflection.png" alt="Mark as read">
                         </span>
                     </div>
                     <ol>
@@ -594,6 +614,14 @@
   <textarea aria-label="Optional reflection text area for points and relatedness" id="gm-points-relatedness-reflection-box" class="reflection-box" placeholder="Use this space for notes or nothing at all..."></textarea>
                     
                     </form>
+                </div>
+                <div class="gm-section-nav">
+                    <a class="gm-title-anchor-back-to-all-gms" href="#address-sdt-needs-points">
+                        <span class="gm-title2">^ Return to SDT needs ^</span>
+                    </a>
+                    <a class="gm-title-anchor-back-to-all-gms" href="#gm-card-hub">
+                        <span class="gm-title2">^ Return to all game mechanics ^</span>
+                    </a>
                 </div>
             </div>
             <hr class="dashed-break">
@@ -617,6 +645,14 @@
                 <p>
                     In your classroom, to activate <b>autonomy</b>, provide a variety of worksheet options to each learner, focusing on one or more skills. To satisfy <b>competence</b>, assign point values to each worksheet based on difficulty. Then, to activate <b>relatedness</b>, allow the learners, upon completing the worksheet, to choose to keep the points for themselves to spend on individual rewards, or to contribute the points to their group or to the classroom overall for larger, collective rewards instead.
                 </p>
+            </div>
+            <div class="gm-section-nav">
+                <a class="gm-title-anchor-back-to-all-gms" href="#address-sdt-needs-points">
+                    <span class="gm-title2">^ Return to SDT needs ^</span>
+                </a>
+                <a class="gm-title-anchor-back-to-all-gms" href="#gm-card-hub">
+                    <span class="gm-title2">^ Return to all game mechanics ^</span>
+                </a>
             </div>
         </section>
         <!-- Badges section -->
@@ -642,7 +678,7 @@
                 But badges appear in the non-digital world, as well. Belt ranks or colors in martial arts often indicate the skill level and a form of mastery. Merit badges express specific accomplishments or skills.
             </p>
              <!-- <hr class="dashed-break"> -->
-             <h2>Using Badges to Address SDT Needs</h2>
+             <h2 id="address-sdt-needs-badges">Using Badges to Address SDT Needs</h2>
             <!-- Tab bar -->
             <div class="gm-tab-bar">
                 <!-- Tab buttons -->
@@ -662,7 +698,7 @@
                             Meaningful Implementation
                         </span>
                         <span  onclick="toggleBadge(event, 'badges-autonomy-reading', 'reading')" id="mark-progress-badges-autonomy-reading-meaningful" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-meaningful.png" alt="Mark as read">
                         </span>
                     </div>
                     <p>
@@ -676,7 +712,7 @@
                             Shallow Implementation
                         </span>
                         <span  onclick="toggleBadge(event, 'badges-autonomy-reading', 'reading')" id="mark-progress-badges-autonomy-reading-shallow" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-shallow.png" alt="Mark as read">
                         </span>
                     </div>
                     <p>
@@ -689,7 +725,7 @@
                             Reflection
                         </span>
                         <span  onclick="toggleBadge(event, 'badges-autonomy-writing', 'writing')" id="mark-progress-badges-autonomy-writing-reflection" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-reflection.png" alt="Mark as read">
                         </span>
                     </div>
                     <ol>
@@ -708,6 +744,14 @@
                      
                     </form>
                 </div>
+                <div class="gm-section-nav">
+                    <a class="gm-title-anchor-back-to-all-gms" href="#address-sdt-needs-badges">
+                        <span class="gm-title2">^ Return to SDT needs ^</span>
+                    </a>
+                    <a class="gm-title-anchor-back-to-all-gms" href="#gm-card-hub">
+                        <span class="gm-title2">^ Return to all game mechanics ^</span>
+                    </a>
+                </div>
             </div>
             <!-- Competence tab content section -->
             <div id="gm-badges-competence" class="gm-badges-tab gm-tab">
@@ -721,7 +765,7 @@
                             Meaningful Implementation
                         </span>
                         <span  onclick="toggleBadge(event, 'badges-competence-reading', 'reading')" id="mark-progress-badges-competence-reading-meaningful" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-meaningful.png" alt="Mark as read">
                         </span>
                     </div>
                     <p>
@@ -734,7 +778,7 @@
                             Shallow Implementation
                         </span>
                         <span  onclick="toggleBadge(event, 'badges-competence-reading', 'reading')" id="mark-progress-badges-competence-reading-shallow" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-shallow.png" alt="Mark as read">
                         </span>
                     </div>
                     <p>
@@ -747,7 +791,7 @@
                             Reflection
                         </span>
                         <span  onclick="toggleBadge(event, 'badges-competence-writing', 'writing')" id="mark-progress-badges-competence-writing-reflection" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-reflection.png" alt="Mark as read">
                         </span>
                     </div>
                     <ol>
@@ -763,6 +807,14 @@
                     
                     </form>
                 </div>
+                <div class="gm-section-nav">
+                    <a class="gm-title-anchor-back-to-all-gms" href="#address-sdt-needs-badges">
+                        <span class="gm-title2">^ Return to SDT needs ^</span>
+                    </a>
+                    <a class="gm-title-anchor-back-to-all-gms" href="#gm-card-hub">
+                        <span class="gm-title2">^ Return to all game mechanics ^</span>
+                    </a>
+                </div>
             </div>
             <!-- Relatedness tab content section -->
             <div id="gm-badges-relatedness" class="gm-badges-tab gm-tab">
@@ -776,7 +828,7 @@
                             Meaningful Implementation
                         </span>
                         <span  onclick="toggleBadge(event, 'badges-relatedness-reading', 'reading')" id="mark-progress-badges-relatedness-reading-meaningful" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-meaningful.png" alt="Mark as read">
                         </span>
                     </div>
                     <p>
@@ -789,7 +841,7 @@
                             Shallow Implementation
                         </span>
                         <span  onclick="toggleBadge(event, 'badges-relatedness-reading', 'reading')" id="mark-progress-badges-relatedness-reading-shallow" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-shallow.png" alt="Mark as read">
                         </span>
                     </div>
                     <p>
@@ -802,7 +854,7 @@
                             Reflection
                         </span>
                         <span  onclick="toggleBadge(event, 'badges-relatedness-writing', 'writing')" id="mark-progress-badges-relatedness-writing-reflection" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-reflection.png" alt="Mark as read">
                         </span>
                     </div>
                     <ol>
@@ -817,6 +869,14 @@
   <textarea aria-label="Optional reflection text area for badges and relatedness" id="gm-badges-relatedness-reflection-box" class="reflection-box" placeholder="Use this space for notes or nothing at all..."></textarea>
                     
                     </form>
+                </div>
+                <div class="gm-section-nav">
+                    <a class="gm-title-anchor-back-to-all-gms" href="#address-sdt-needs-badges">
+                        <span class="gm-title2">^ Return to SDT needs ^</span>
+                    </a>
+                    <a class="gm-title-anchor-back-to-all-gms" href="#gm-card-hub">
+                        <span class="gm-title2">^ Return to all game mechanics ^</span>
+                    </a>
                 </div>
             </div>
             <hr class="dashed-break">
@@ -847,6 +907,14 @@
                     To bring in <b>relatedness</b>, perhaps make it so a few of the badges are either collective, such that the class earns them together, or peer-awarded, where learners give awards to other learners in recognition of their accomplishments, hard work, generosity, etc.
                 </p>
             </div>
+            <div class="gm-section-nav">
+                <a class="gm-title-anchor-back-to-all-gms" href="#address-sdt-needs-badges">
+                    <span class="gm-title2">^ Return to SDT needs ^</span>
+                </a>
+                <a class="gm-title-anchor-back-to-all-gms" href="#gm-card-hub">
+                    <span class="gm-title2">^ Return to all game mechanics ^</span>
+                </a>
+            </div>
         </section>
         <!-- Progression section -->
         <section id="gm-progression" class="act act-V gm-progression act-V-gm-section">
@@ -874,7 +942,7 @@
                 Progression works well with other game mechanics. Points and badges are often used with progression to mark milestones, and stories naturally progress over time.
             </p>
              <!-- <hr class="dashed-break"> -->
-             <h2>Using Progression to Address SDT Needs</h2>
+             <h2 id="address-sdt-needs-progression">Using Progression to Address SDT Needs</h2>
             <!-- Tab bar -->
             <div class="gm-tab-bar">
                 <!-- Tab buttons -->
@@ -894,7 +962,7 @@
                             Meaningful Implementation
                         </span>
                         <span  onclick="toggleBadge(event, 'progression-autonomy-reading', 'reading')" id="mark-progress-progression-autonomy-reading-meaningful" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-meaningful.png" alt="Mark as read">
                         </span>
                     </div>
                     <p>
@@ -907,7 +975,7 @@
                             Shallow Implementation
                         </span>
                         <span  onclick="toggleBadge(event, 'progression-autonomy-reading', 'reading')" id="mark-progress-progression-autonomy-reading-shallow" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-shallow.png" alt="Mark as read">
                         </span>
                     </div>
                     <p>
@@ -920,7 +988,7 @@
                             Reflection
                         </span>
                         <span  onclick="toggleBadge(event, 'progression-autonomy-writing', 'writing')" id="mark-progress-progression-autonomy-writing-reflection" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-reflection.png" alt="Mark as read">
                         </span>
                     </div>
                     <ol>
@@ -939,6 +1007,14 @@
                      
                     </form>
                 </div>
+                <div class="gm-section-nav">
+                    <a class="gm-title-anchor-back-to-all-gms" href="#address-sdt-needs-progression">
+                        <span class="gm-title2">^ Return to SDT needs ^</span>
+                    </a>
+                    <a class="gm-title-anchor-back-to-all-gms" href="#gm-card-hub">
+                        <span class="gm-title2">^ Return to all game mechanics ^</span>
+                    </a>
+                </div>
             </div>
             <!-- Competence tab content section -->
             <div id="gm-progression-competence" class="gm-progression-tab gm-tab">
@@ -952,7 +1028,7 @@
                             Meaningful Implementation
                         </span>
                         <span  onclick="toggleBadge(event, 'progression-competence-reading', 'reading')" id="mark-progress-progression-competence-reading-meaningful" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-meaningful.png" alt="Mark as read">
                         </span>
                     </div>
                     <p>
@@ -965,7 +1041,7 @@
                             Shallow Implementation
                         </span>
                         <span  onclick="toggleBadge(event, 'progression-competence-reading', 'reading')" id="mark-progress-progression-competence-reading-shallow" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-shallow.png" alt="Mark as read">
                         </span>
                     </div>
                     <p>
@@ -978,7 +1054,7 @@
                             Reflection
                         </span>
                         <span  onclick="toggleBadge(event, 'progression-competence-writing', 'writing')" id="mark-progress-progression-competence-writing-reflection" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-reflection.png" alt="Mark as read">
                         </span>
                     </div>
                     <ol>
@@ -994,6 +1070,14 @@
                     
                     </form>
                 </div>
+                <div class="gm-section-nav">
+                    <a class="gm-title-anchor-back-to-all-gms" href="#address-sdt-needs-progression">
+                        <span class="gm-title2">^ Return to SDT needs ^</span>
+                    </a>
+                    <a class="gm-title-anchor-back-to-all-gms" href="#gm-card-hub">
+                        <span class="gm-title2">^ Return to all game mechanics ^</span>
+                    </a>
+                </div>
             </div>
             <!-- Relatedness tab content section -->
             <div id="gm-progression-relatedness" class="gm-progression-tab gm-tab">
@@ -1007,7 +1091,7 @@
                             Meaningful Implementation
                         </span>
                         <span  onclick="toggleBadge(event, 'progression-relatedness-reading', 'reading')" id="mark-progress-progression-relatedness-reading-meaningful" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-meaningful.png" alt="Mark as read">
                         </span>
                     </div>
                     <p>
@@ -1020,7 +1104,7 @@
                             Shallow Implementation
                         </span>
                         <span  onclick="toggleBadge(event, 'progression-relatedness-reading', 'reading')" id="mark-progress-progression-relatedness-reading-shallow" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-shallow.png" alt="Mark as read">
                         </span>
                     </div>
                     <p>
@@ -1033,7 +1117,7 @@
                             Reflection
                         </span>
                         <span  onclick="toggleBadge(event, 'progression-relatedness-writing', 'writing')" id="mark-progress-progression-relatedness-writing-reflection" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-reflection.png" alt="Mark as read">
                         </span>
                     </div>
                     <ol>
@@ -1049,7 +1133,14 @@
                     
                     </form>
                 </div>
-                
+                <div class="gm-section-nav">
+                    <a class="gm-title-anchor-back-to-all-gms" href="#address-sdt-needs-progression">
+                        <span class="gm-title2">^ Return to SDT needs ^</span>
+                    </a>
+                    <a class="gm-title-anchor-back-to-all-gms" href="#gm-card-hub">
+                        <span class="gm-title2">^ Return to all game mechanics ^</span>
+                    </a>
+                </div>
             </div>
             <hr class="dashed-break">
             <h2>Non-Digital Recipe Using Progression</h2>
@@ -1094,6 +1185,14 @@
                     As the class moves through lessons and learners practice new skills, they'll reach mastery moments. These are areas of the tree where learners can reflect on what they've learned, write their thoughts on a Post-It Note, and stick it on that part of the tree. This represents <b>relatedness</b>, since they'll get recognition for reaching that milestone and can feel a shared sense of belonging and support as more learners also reach it. It may even inspire them to mentor learners who are finding it difficult to climb certain sections of the tree.
                 </p>
             </div>
+            <div class="gm-section-nav">
+                <a class="gm-title-anchor-back-to-all-gms" href="#address-sdt-needs-progression">
+                    <span class="gm-title2">^ Return to SDT needs ^</span>
+                </a>
+                <a class="gm-title-anchor-back-to-all-gms" href="#gm-card-hub">
+                    <span class="gm-title2">^ Return to all game mechanics ^</span>
+                </a>
+            </div>
         </section>
         <!-- Story section -->
         <section id="gm-story" class="act act-V gm-story act-V-gm-section">
@@ -1118,7 +1217,7 @@
                 We can utilize story in a variety of ways in education to motivate learners. Stories can empower and connect, but if implemented poorly, can distract from the subject being taught.
             </p>
              <!-- <hr class="dashed-break"> -->
-             <h2>Using Story to Address SDT Needs</h2>
+             <h2 id="address-sdt-needs-story">Using Story to Address SDT Needs</h2>
             <!-- Tab bar -->
             <div class="gm-tab-bar">
                 <!-- Tab buttons -->
@@ -1138,7 +1237,7 @@
                             Meaningful Implementation
                         </span>
                         <span  onclick="toggleBadge(event, 'story-autonomy-reading', 'reading')" id="mark-progress-story-autonomy-reading-meaningful" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-meaningful.png" alt="Mark as read">
                         </span>
                     </div>
                     <p>
@@ -1151,7 +1250,7 @@
                             Shallow Implementation
                         </span>
                         <span  onclick="toggleBadge(event, 'story-autonomy-reading', 'reading')" id="mark-progress-story-autonomy-reading-shallow" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-shallow.png" alt="Mark as read">
                         </span>
                     </div>
                     <p>
@@ -1164,7 +1263,7 @@
                             Reflection
                         </span>
                         <span  onclick="toggleBadge(event, 'story-autonomy-writing', 'writing')" id="mark-progress-story-autonomy-writing-reflection" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-reflection.png" alt="Mark as read">
                         </span>
                     </div>
                     <ol>
@@ -1183,6 +1282,14 @@
                      
                     </form>
                 </div>
+                <div class="gm-section-nav">
+                    <a class="gm-title-anchor-back-to-all-gms" href="#address-sdt-needs-story">
+                        <span class="gm-title2">^ Return to SDT needs ^</span>
+                    </a>
+                    <a class="gm-title-anchor-back-to-all-gms" href="#gm-card-hub">
+                        <span class="gm-title2">^ Return to all game mechanics ^</span>
+                    </a>
+                </div>
             </div>
             <!-- Competence tab content section -->
             <div id="gm-story-competence" class="gm-story-tab gm-tab">
@@ -1196,7 +1303,7 @@
                             Meaningful Implementation
                         </span>
                         <span  onclick="toggleBadge(event, 'story-competence-reading', 'reading')" id="mark-progress-story-competence-reading-meaningful" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-meaningful.png" alt="Mark as read">
                         </span>
                     </div>
                     <p>
@@ -1209,7 +1316,7 @@
                             Shallow Implementation
                         </span>
                         <span  onclick="toggleBadge(event, 'story-competence-reading', 'reading')" id="mark-progress-story-competence-reading-shallow" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-shallow.png" alt="Mark as read">
                         </span>
                     </div>
                     <p>
@@ -1222,7 +1329,7 @@
                             Reflection
                         </span>
                         <span  onclick="toggleBadge(event, 'story-competence-writing', 'writing')" id="mark-progress-story-competence-writing-reflection" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-reflection.png" alt="Mark as read">
                         </span>
                     </div>
                     <ol>
@@ -1238,6 +1345,14 @@
                     
                     </form>
                 </div>
+                <div class="gm-section-nav">
+                    <a class="gm-title-anchor-back-to-all-gms" href="#address-sdt-needs-story">
+                        <span class="gm-title2">^ Return to SDT needs ^</span>
+                    </a>
+                    <a class="gm-title-anchor-back-to-all-gms" href="#gm-card-hub">
+                        <span class="gm-title2">^ Return to all game mechanics ^</span>
+                    </a>
+                </div>
             </div>
             <!-- Relatedness tab content section -->
             <div id="gm-story-relatedness" class="gm-story-tab gm-tab">
@@ -1251,7 +1366,7 @@
                             Meaningful Implementation
                         </span>
                         <span  onclick="toggleBadge(event, 'story-relatedness-reading', 'reading')" id="mark-progress-story-relatedness-reading-meaningful" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-meaningful.png" alt="Mark as read">
                         </span>
                     </div>
                     <p>
@@ -1264,7 +1379,7 @@
                             Shallow Implementation
                         </span>
                         <span  onclick="toggleBadge(event, 'story-relatedness-reading', 'reading')" id="mark-progress-story-relatedness-reading-shallow" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-shallow.png" alt="Mark as read">
                         </span>
                     </div>
                     <p>
@@ -1277,7 +1392,7 @@
                             Reflection
                         </span>
                         <span  onclick="toggleBadge(event, 'story-relatedness-writing', 'writing')" id="mark-progress-story-relatedness-writing-reflection" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-reflection.png" alt="Mark as read">
                         </span>
                     </div>
                     <ol>
@@ -1292,6 +1407,14 @@
   <textarea aria-label="Optional reflection text area for story and relatedness" id="gm-story-relatedness-reflection-box" class="reflection-box" placeholder="Use this space for notes or nothing at all..."></textarea>
                     
                     </form>
+                </div>
+                <div class="gm-section-nav">
+                    <a class="gm-title-anchor-back-to-all-gms" href="#address-sdt-needs-story">
+                        <span class="gm-title2">^ Return to SDT needs ^</span>
+                    </a>
+                    <a class="gm-title-anchor-back-to-all-gms" href="#gm-card-hub">
+                        <span class="gm-title2">^ Return to all game mechanics ^</span>
+                    </a>
                 </div>
             </div>
             <hr class="dashed-break">
@@ -1337,6 +1460,14 @@
                     By allowing learners to create the story and vote on it, they fulfill both <b>autonomy</b> and <b>relatedness</b>. <b>Competence</b> comes through the gradual building of the story and its elements, during this initial storytelling session, as well as through future iterations that continue to develop the narrative. It supports <b>competence</b> by providing the teacher with a general structure and plenty of learner-created content to experiment with as they design the lessons and activities.
                 </p>
             </div>
+            <div class="gm-section-nav">
+                <a class="gm-title-anchor-back-to-all-gms" href="#address-sdt-needs-story">
+                    <span class="gm-title2">^ Return to SDT needs ^</span>
+                </a>
+                <a class="gm-title-anchor-back-to-all-gms" href="#gm-card-hub">
+                    <span class="gm-title2">^ Return to all game mechanics ^</span>
+                </a>
+            </div>
         </section>
         <!-- Co-design section -->
         <section id="gm-codesign" class="act act-V gm-codesign act-V-gm-section">
@@ -1358,7 +1489,7 @@
                 In education, co-design is a useful mechanic to include because it shifts learners' mindsets from consumers to co-creators of educational content.
             </p>            
              <!-- <hr class="dashed-break"> -->
-             <h2>Using Co-design to Address SDT Needs</h2>
+             <h2 id="address-sdt-needs-codesign">Using Co-design to Address SDT Needs</h2>
             <!-- Tab bar -->
             <div class="gm-tab-bar">
                 <!-- Tab buttons -->
@@ -1378,7 +1509,7 @@
                             Meaningful Implementation
                         </span>
                         <span  onclick="toggleBadge(event, 'codesign-autonomy-reading', 'reading')" id="mark-progress-codesign-autonomy-reading-meaningful" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-meaningful.png" alt="Mark as read">
                         </span>
                     </div>
                     <p>
@@ -1391,7 +1522,7 @@
                             Shallow Implementation
                         </span>
                         <span  onclick="toggleBadge(event, 'codesign-autonomy-reading', 'reading')" id="mark-progress-codesign-autonomy-reading-shallow" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-shallow.png" alt="Mark as read">
                         </span>
                     </div>
                     <p>
@@ -1404,7 +1535,7 @@
                             Reflection
                         </span>
                         <span  onclick="toggleBadge(event, 'codesign-autonomy-writing', 'writing')" id="mark-progress-codesign-autonomy-writing-reflection" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-reflection.png" alt="Mark as read">
                         </span>
                     </div>
                     <ol>
@@ -1420,6 +1551,14 @@
                      
                     </form>
                 </div>
+                <div class="gm-section-nav">
+                    <a class="gm-title-anchor-back-to-all-gms" href="#address-sdt-needs-codesign">
+                        <span class="gm-title2">^ Return to SDT needs ^</span>
+                    </a>
+                    <a class="gm-title-anchor-back-to-all-gms" href="#gm-card-hub">
+                        <span class="gm-title2">^ Return to all game mechanics ^</span>
+                    </a>
+                </div>
             </div>
             <!-- Competence tab content section -->
             <div id="gm-codesign-competence" class="gm-codesign-tab gm-tab">
@@ -1433,7 +1572,7 @@
                             Meaningful Implementation
                         </span>
                         <span  onclick="toggleBadge(event, 'codesign-competence-reading', 'reading')" id="mark-progress-codesign-competence-reading-meaningful" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-meaningful.png" alt="Mark as read">
                         </span>
                     </div>
                     <p>
@@ -1446,7 +1585,7 @@
                             Shallow Implementation
                         </span>
                         <span  onclick="toggleBadge(event, 'codesign-competence-reading', 'reading')" id="mark-progress-codesign-competence-reading-shallow" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-shallow.png" alt="Mark as read">
                         </span>
                     </div>
                     <p>
@@ -1459,7 +1598,7 @@
                             Reflection
                         </span>
                         <span  onclick="toggleBadge(event, 'codesign-competence-writing', 'writing')" id="mark-progress-codesign-competence-writing-reflection" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-reflection.png" alt="Mark as read">
                         </span>
                     </div>
                     <ol>
@@ -1475,6 +1614,14 @@
                     
                     </form>
                 </div>
+                <div class="gm-section-nav">
+                    <a class="gm-title-anchor-back-to-all-gms" href="#address-sdt-needs-codesign">
+                        <span class="gm-title2">^ Return to SDT needs ^</span>
+                    </a>
+                    <a class="gm-title-anchor-back-to-all-gms" href="#gm-card-hub">
+                        <span class="gm-title2">^ Return to all game mechanics ^</span>
+                    </a>
+                </div>
             </div>
             <!-- Relatedness tab content section -->
             <div id="gm-codesign-relatedness" class="gm-codesign-tab gm-tab">
@@ -1488,7 +1635,7 @@
                             Meaningful Implementation
                         </span>
                         <span  onclick="toggleBadge(event, 'codesign-relatedness-reading', 'reading')" id="mark-progress-codesign-relatedness-reading-meaningful" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-meaningful.png" alt="Mark as read">
                         </span>
                     </div>
                     <p>
@@ -1501,7 +1648,7 @@
                             Shallow Implementation
                         </span>
                         <span  onclick="toggleBadge(event, 'codesign-relatedness-reading', 'reading')" id="mark-progress-codesign-relatedness-reading-shallow" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-shallow.png" alt="Mark as read">
                         </span>
                     </div>
                     <p>
@@ -1514,7 +1661,7 @@
                             Reflection
                         </span>
                         <span  onclick="toggleBadge(event, 'codesign-relatedness-writing', 'writing')" id="mark-progress-codesign-relatedness-writing-reflection" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-reflection.png" alt="Mark as read">
                         </span>
                     </div>
                     <ol>
@@ -1530,7 +1677,14 @@
                     
                     </form>
                 </div>
-                
+                <div class="gm-section-nav">
+                    <a class="gm-title-anchor-back-to-all-gms" href="#address-sdt-needs-codesign">
+                        <span class="gm-title2">^ Return to SDT needs ^</span>
+                    </a>
+                    <a class="gm-title-anchor-back-to-all-gms" href="#gm-card-hub">
+                        <span class="gm-title2">^ Return to all game mechanics ^</span>
+                    </a>
+                </div>
             </div>
             <hr class="dashed-break">
             <h2>Non-Digital Recipe Using Co-design</h2>
@@ -1566,6 +1720,14 @@
                     By letting them experiment, the learners have <b>autonomy</b>. By having the learners given reasoning for their ideas, and by having them listen as the teacher gives their reasoning, as well, <b>competence</b> is satisfied. And, when done collaborative, this co-design session promotes <b>relatedness</b>.
                 </p>
             </div>
+            <div class="gm-section-nav">
+                <a class="gm-title-anchor-back-to-all-gms" href="#address-sdt-needs-codesign">
+                    <span class="gm-title2">^ Return to SDT needs ^</span>
+                </a>
+                <a class="gm-title-anchor-back-to-all-gms" href="#gm-card-hub">
+                    <span class="gm-title2">^ Return to all game mechanics ^</span>
+                </a>
+            </div>
         </section>
         <!-- Collaboration section -->
         <section id="gm-collaboration" class="act act-V gm-collaboration act-V-gm-section">
@@ -1587,7 +1749,7 @@
                 In education, this often looks like <em>group projects</em> or <em>study groups</em>.
             </p>
              <!-- <hr class="dashed-break"> -->
-             <h2>Using Collaboration to Address SDT Needs</h2>
+             <h2 id="address-sdt-needs-collaboration">Using Collaboration to Address SDT Needs</h2>
             <!-- Tab bar -->
             <div class="gm-tab-bar">
                 <!-- Tab buttons -->
@@ -1607,7 +1769,7 @@
                             Meaningful Implementation
                         </span>
                         <span  onclick="toggleBadge(event, 'collaboration-autonomy-reading', 'reading')" id="mark-progress-collaboration-autonomy-reading-meaningful" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-meaningful.png" alt="Mark as read">
                         </span>
                     </div>
                     <p>
@@ -1620,7 +1782,7 @@
                             Shallow Implementation
                         </span>
                         <span  onclick="toggleBadge(event, 'collaboration-autonomy-reading', 'reading')" id="mark-progress-collaboration-autonomy-reading-shallow" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-shallow.png" alt="Mark as read">
                         </span>
                     </div>
                     <p>
@@ -1633,7 +1795,7 @@
                             Reflection
                         </span>
                         <span  onclick="toggleBadge(event, 'collaboration-autonomy-writing', 'writing')" id="mark-progress-collaboration-autonomy-writing-reflection" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-reflection.png" alt="Mark as read">
                         </span>
                     </div>
                     <ol>
@@ -1649,6 +1811,14 @@
                      
                     </form>
                 </div>
+                <div class="gm-section-nav">
+                    <a class="gm-title-anchor-back-to-all-gms" href="#address-sdt-needs-collaboration">
+                        <span class="gm-title2">^ Return to SDT needs ^</span>
+                    </a>
+                    <a class="gm-title-anchor-back-to-all-gms" href="#gm-card-hub">
+                        <span class="gm-title2">^ Return to all game mechanics ^</span>
+                    </a>
+                </div>
             </div>
             <!-- Competence tab content section -->
             <div id="gm-collaboration-competence" class="gm-collaboration-tab gm-tab">
@@ -1662,7 +1832,7 @@
                             Meaningful Implementation
                         </span>
                         <span  onclick="toggleBadge(event, 'collaboration-competence-reading', 'reading')" id="mark-progress-collaboration-competence-reading-meaningful" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-meaningful.png" alt="Mark as read">
                         </span>
                     </div>
                     <p>
@@ -1675,7 +1845,7 @@
                             Shallow Implementation
                         </span>
                         <span  onclick="toggleBadge(event, 'collaboration-competence-reading', 'reading')" id="mark-progress-collaboration-competence-reading-shallow" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-shallow.png" alt="Mark as read">
                         </span>
                     </div>
                     <p>
@@ -1689,7 +1859,7 @@
                             Reflection
                         </span>
                         <span  onclick="toggleBadge(event, 'collaboration-competence-writing', 'writing')" id="mark-progress-collaboration-competence-writing-reflection" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-reflection.png" alt="Mark as read">
                         </span>
                     </div>
                     <ol>
@@ -1705,6 +1875,14 @@
                     
                     </form>
                 </div>
+                <div class="gm-section-nav">
+                    <a class="gm-title-anchor-back-to-all-gms" href="#address-sdt-needs-collaboration">
+                        <span class="gm-title2">^ Return to SDT needs ^</span>
+                    </a>
+                    <a class="gm-title-anchor-back-to-all-gms" href="#gm-card-hub">
+                        <span class="gm-title2">^ Return to all game mechanics ^</span>
+                    </a>
+                </div>
             </div>
             <!-- Relatedness tab content section -->
             <div id="gm-collaboration-relatedness" class="gm-collaboration-tab gm-tab">
@@ -1718,7 +1896,7 @@
                             Meaningful Implementation
                         </span>
                         <span  onclick="toggleBadge(event, 'collaboration-relatedness-reading', 'reading')" id="mark-progress-collaboration-relatedness-reading-meaningful" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-meaningful.png" alt="Mark as read">
                         </span>
                     </div>
                     <p>
@@ -1731,7 +1909,7 @@
                             Shallow Implementation
                         </span>
                         <span  onclick="toggleBadge(event, 'collaboration-relatedness-reading', 'reading')" id="mark-progress-collaboration-relatedness-reading-shallow" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-shallow.png" alt="Mark as read">
                         </span>
                     </div>
                     <p>
@@ -1747,7 +1925,7 @@
                             Reflection
                         </span>
                         <span  onclick="toggleBadge(event, 'collaboration-relatedness-writing', 'writing')" id="mark-progress-collaboration-relatedness-writing-reflection" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-reflection.png" alt="Mark as read">
                         </span>
                     </div>
                     <ol>
@@ -1762,6 +1940,14 @@
   <textarea aria-label="Optional reflection text area for collaboration and relatedness" id="gm-collaboration-relatedness-reflection-box" class="reflection-box" placeholder="Use this space for notes or nothing at all..."></textarea>
                     
                     </form>
+                </div>
+                <div class="gm-section-nav">
+                    <a class="gm-title-anchor-back-to-all-gms" href="#address-sdt-needs-collaboration">
+                        <span class="gm-title2">^ Return to SDT needs ^</span>
+                    </a>
+                    <a class="gm-title-anchor-back-to-all-gms" href="#gm-card-hub">
+                        <span class="gm-title2">^ Return to all game mechanics ^</span>
+                    </a>
                 </div>
             </div>
             <hr class="dashed-break">
@@ -1798,6 +1984,14 @@
                     To promote a sense of belonging, each group needs to craft a kind of story or visual representation of their collective understanding of the challenge, including and reflecting each member's contributions in some way.
                 </p>
             </div>
+            <div class="gm-section-nav">
+                <a class="gm-title-anchor-back-to-all-gms" href="#address-sdt-needs-collaboration">
+                    <span class="gm-title2">^ Return to SDT needs ^</span>
+                </a>
+                <a class="gm-title-anchor-back-to-all-gms" href="#gm-card-hub">
+                    <span class="gm-title2">^ Return to all game mechanics ^</span>
+                </a>
+            </div>
         </section>
         <!-- Competition section -->
         <section id="gm-competition" class="act act-V gm-competition act-V-gm-section">
@@ -1819,7 +2013,7 @@
                 Competition is incredibly common and can be extremely motivating. Success feels good, especially when it's earned through dedication and growth. At the same time, it can be disheartening if you can't seem to win regardless of how hard you try.
             </p>
              <!-- <hr class="dashed-break"> -->
-             <h2>Using Competition to Address SDT Needs</h2>
+             <h2 id="address-sdt-needs-competition">Using Competition to Address SDT Needs</h2>
             <!-- Tab bar -->
             <div class="gm-tab-bar">
                 <!-- Tab buttons -->
@@ -1839,7 +2033,7 @@
                             Meaningful Implementation
                         </span>
                         <span  onclick="toggleBadge(event, 'competition-autonomy-reading', 'reading')" id="mark-progress-competition-autonomy-reading-meaningful" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-meaningful.png" alt="Mark as read">
                         </span>
                     </div>
                     <p>
@@ -1852,7 +2046,7 @@
                             Shallow Implementation
                         </span>
                         <span  onclick="toggleBadge(event, 'competition-autonomy-reading', 'reading')" id="mark-progress-competition-autonomy-reading-shallow" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-shallow.png" alt="Mark as read">
                         </span>
                     </div>
                     <p>
@@ -1865,7 +2059,7 @@
                             Reflection
                         </span>
                         <span  onclick="toggleBadge(event, 'competition-autonomy-writing', 'writing')" id="mark-progress-competition-autonomy-writing-reflection" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-reflection.png" alt="Mark as read">
                         </span>
                     </div>
                     <ol>
@@ -1881,6 +2075,14 @@
                      
                     </form>
                 </div>
+                <div class="gm-section-nav">
+                    <a class="gm-title-anchor-back-to-all-gms" href="#address-sdt-needs-competition">
+                        <span class="gm-title2">^ Return to SDT needs ^</span>
+                    </a>
+                    <a class="gm-title-anchor-back-to-all-gms" href="#gm-card-hub">
+                        <span class="gm-title2">^ Return to all game mechanics ^</span>
+                    </a>
+                </div>
             </div>
             <!-- Competence tab content section -->
             <div id="gm-competition-competence" class="gm-competition-tab gm-tab">
@@ -1894,7 +2096,7 @@
                             Meaningful Implementation
                         </span>
                         <span  onclick="toggleBadge(event, 'competition-competence-reading', 'reading')" id="mark-progress-competition-competence-reading-meaningful" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-meaningful.png" alt="Mark as read">
                         </span>
                     </div>
                     <p>
@@ -1907,7 +2109,7 @@
                             Shallow Implementation
                         </span>
                         <span  onclick="toggleBadge(event, 'competition-competence-reading', 'reading')" id="mark-progress-competition-competence-reading-shallow" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-shallow.png" alt="Mark as read">
                         </span>
                     </div>
                     <p>
@@ -1920,7 +2122,7 @@
                             Reflection
                         </span>
                         <span  onclick="toggleBadge(event, 'competition-competence-writing', 'writing')" id="mark-progress-competition-competence-writing-reflection" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-reflection.png" alt="Mark as read">
                         </span>
                     </div>
                     <ol>
@@ -1936,6 +2138,14 @@
                     
                     </form>
                 </div>
+                <div class="gm-section-nav">
+                    <a class="gm-title-anchor-back-to-all-gms" href="#address-sdt-needs-competition">
+                        <span class="gm-title2">^ Return to SDT needs ^</span>
+                    </a>
+                    <a class="gm-title-anchor-back-to-all-gms" href="#gm-card-hub">
+                        <span class="gm-title2">^ Return to all game mechanics ^</span>
+                    </a>
+                </div>
             </div>
             <!-- Relatedness tab content section -->
             <div id="gm-competition-relatedness" class="gm-competition-tab gm-tab">
@@ -1949,7 +2159,7 @@
                             Meaningful Implementation
                         </span>
                         <span  onclick="toggleBadge(event, 'competition-relatedness-reading', 'reading')" id="mark-progress-competition-relatedness-reading-meaningful" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-meaningful.png" alt="Mark as read">
                         </span>
                     </div>
                     <p>
@@ -1962,7 +2172,7 @@
                             Shallow Implementation
                         </span>
                         <span  onclick="toggleBadge(event, 'competition-relatedness-reading', 'reading')" id="mark-progress-competition-relatedness-reading-shallow" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-shallow.png" alt="Mark as read">
                         </span>
                     </div>
                     <p>
@@ -1975,7 +2185,7 @@
                             Reflection
                         </span>
                         <span  onclick="toggleBadge(event, 'competition-relatedness-writing', 'writing')" id="mark-progress-competition-relatedness-writing-reflection" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-reflection.png" alt="Mark as read">
                         </span>
                     </div>
                     <ol>
@@ -1993,6 +2203,14 @@
   <textarea aria-label="Optional reflection text area for competition and relatedness" id="gm-competition-relatedness-reflection-box" class="reflection-box" placeholder="Use this space for notes or nothing at all..."></textarea>
                     
                     </form>
+                </div>
+                <div class="gm-section-nav">
+                    <a class="gm-title-anchor-back-to-all-gms" href="#address-sdt-needs-competition">
+                        <span class="gm-title2">^ Return to SDT needs ^</span>
+                    </a>
+                    <a class="gm-title-anchor-back-to-all-gms" href="#gm-card-hub">
+                        <span class="gm-title2">^ Return to all game mechanics ^</span>
+                    </a>
                 </div>
             </div>
             <hr class="dashed-break">
@@ -2030,6 +2248,14 @@
                     For teams, <b>relatedness</b> can be fostered through encouraging each member to embrace their own skills and also learn from their teammates. The same can occur for individuals. If they compete against others, have them focus more on learning from their opponent. If they are competing against themselves, have them reflect with others who chose the same (or a similar) project to learn from each other.
                 </p>
             </div>
+            <div class="gm-section-nav">
+                <a class="gm-title-anchor-back-to-all-gms" href="#address-sdt-needs-competition">
+                    <span class="gm-title2">^ Return to SDT needs ^</span>
+                </a>
+                <a class="gm-title-anchor-back-to-all-gms" href="#gm-card-hub">
+                    <span class="gm-title2">^ Return to all game mechanics ^</span>
+                </a>
+            </div>
         </section>
         <!-- Roleplay section -->
         <section id="gm-roleplay" class="act act-V gm-roleplay act-V-gm-section">
@@ -2051,7 +2277,7 @@
                 In education, roleplaying could allow learners to build empathy and the skill of perspective-taking. It could also be a way for them to channel traits of certain careers or people, such as applying design skills by "thinking like a designer" or mentoring peers by "thinking like an educator."
             </p>
              <!-- <hr class="dashed-break"> -->
-             <h2>Using Roleplay to Address SDT Needs</h2>
+             <h2 id="address-sdt-needs-roleplay">Using Roleplay to Address SDT Needs</h2>
             <!-- Tab bar -->
             <div class="gm-tab-bar">
                 <!-- Tab buttons -->
@@ -2071,7 +2297,7 @@
                             Meaningful Implementation
                         </span>
                         <span  onclick="toggleBadge(event, 'roleplay-autonomy-reading', 'reading')" id="mark-progress-roleplay-autonomy-reading-meaningful" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-meaningful.png" alt="Mark as read">
                         </span>
                     </div>
                     <p>
@@ -2084,7 +2310,7 @@
                             Shallow Implementation
                         </span>
                         <span  onclick="toggleBadge(event, 'roleplay-autonomy-reading', 'reading')" id="mark-progress-roleplay-autonomy-reading-shallow" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-shallow.png" alt="Mark as read">
                         </span>
                     </div>
                     <p>
@@ -2097,7 +2323,7 @@
                             Reflection
                         </span>
                         <span  onclick="toggleBadge(event, 'roleplay-autonomy-writing', 'writing')" id="mark-progress-roleplay-autonomy-writing-reflection" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-reflection.png" alt="Mark as read">
                         </span>
                     </div>
                     <ol>
@@ -2109,9 +2335,16 @@
                         </li>
                     </ol>
                     <form class="reflection-area">
-  <textarea aria-label="Optional reflection text area for roleplay and autonomy" id="gm-roleplay-autonomy-reflection-box" class="reflection-box" placeholder="Use this space for notes or nothing at all..."></textarea>
-                    <button onclick="showNotification('Completed the Roleplay Autonomy section!')">Download Reflections</button> 
+  <textarea aria-label="Optional reflection text area for roleplay and autonomy" id="gm-roleplay-autonomy-reflection-box" class="reflection-box" placeholder="Use this space for notes or nothing at all..."></textarea>                    
                     </form>
+                </div>
+                <div class="gm-section-nav">
+                    <a class="gm-title-anchor-back-to-all-gms" href="#address-sdt-needs-roleplay">
+                        <span class="gm-title2">^ Return to SDT needs ^</span>
+                    </a>
+                    <a class="gm-title-anchor-back-to-all-gms" href="#gm-card-hub">
+                        <span class="gm-title2">^ Return to all game mechanics ^</span>
+                    </a>
                 </div>
             </div>
             <!-- Competence tab content section -->
@@ -2126,7 +2359,7 @@
                             Meaningful Implementation
                         </span>
                         <span  onclick="toggleBadge(event, 'roleplay-competence-reading', 'reading')" id="mark-progress-roleplay-competence-reading-meaningful" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-meaningful.png" alt="Mark as read">
                         </span>
                     </div>
                     <p>
@@ -2139,7 +2372,7 @@
                             Shallow Implementation
                         </span>
                         <span  onclick="toggleBadge(event, 'roleplay-competence-reading', 'reading')" id="mark-progress-roleplay-competence-reading-shallow" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-shallow.png" alt="Mark as read">
                         </span>
                     </div>
                     <p>
@@ -2152,7 +2385,7 @@
                             Reflection
                         </span>
                         <span  onclick="toggleBadge(event, 'roleplay-competence-writing', 'writing')" id="mark-progress-roleplay-competence-writing-reflection" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-reflection.png" alt="Mark as read">
                         </span>
                     </div>
                     <ol>
@@ -2168,6 +2401,14 @@
                     
                     </form>
                 </div>
+                <div class="gm-section-nav">
+                    <a class="gm-title-anchor-back-to-all-gms" href="#address-sdt-needs-roleplay">
+                        <span class="gm-title2">^ Return to SDT needs ^</span>
+                    </a>
+                    <a class="gm-title-anchor-back-to-all-gms" href="#gm-card-hub">
+                        <span class="gm-title2">^ Return to all game mechanics ^</span>
+                    </a>
+                </div>
             </div>
             <!-- Relatedness tab content section -->
             <div id="gm-roleplay-relatedness" class="gm-roleplay-tab gm-tab">
@@ -2181,7 +2422,7 @@
                             Meaningful Implementation
                         </span>
                         <span  onclick="toggleBadge(event, 'roleplay-relatedness-reading', 'reading')" id="mark-progress-roleplay-relatedness-reading-meaningful" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-meaningful.png" alt="Mark as read">
                         </span>
                     </div>
                     <p>
@@ -2194,7 +2435,7 @@
                             Shallow Implementation
                         </span>
                         <span  onclick="toggleBadge(event, 'roleplay-relatedness-reading', 'reading')" id="mark-progress-roleplay-relatedness-reading-shallow" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-shallow.png" alt="Mark as read">
                         </span>
                     </div>
                     <p>
@@ -2207,7 +2448,7 @@
                             Reflection
                         </span>
                         <span  onclick="toggleBadge(event, 'roleplay-relatedness-writing', 'writing')" id="mark-progress-roleplay-relatedness-writing-reflection" class="mark-progress">
-                            <img src="/assets/badges/gm-checkbox-can-check.png" alt="Mark as read">
+                            <img src="/assets/badges/gm-checkbox-can-check-reflection.png" alt="Mark as read">
                         </span>
                     </div>
                     <ol>
@@ -2222,6 +2463,14 @@
   <textarea aria-label="Optional reflection text area for roleplay and relatedness" id="gm-roleplay-relatedness-reflection-box" class="reflection-box" placeholder="Use this space for notes or nothing at all..."></textarea>
                     
                     </form>
+                </div>
+                <div class="gm-section-nav">
+                    <a class="gm-title-anchor-back-to-all-gms" href="#address-sdt-needs-roleplay">
+                        <span class="gm-title2">^ Return to SDT needs ^</span>
+                    </a>
+                    <a class="gm-title-anchor-back-to-all-gms" href="#gm-card-hub">
+                        <span class="gm-title2">^ Return to all game mechanics ^</span>
+                    </a>
                 </div>
             </div>
             <hr class="dashed-break">
@@ -2266,6 +2515,14 @@
                 <p>
                     Repeat as time and interest permit.
                 </p>
+            </div>
+            <div class="gm-section-nav">
+                <a class="gm-title-anchor-back-to-all-gms" href="#address-sdt-needs-roleplay">
+                    <span class="gm-title2">^ Return to SDT needs ^</span>
+                </a>
+                <a class="gm-title-anchor-back-to-all-gms" href="#gm-card-hub">
+                    <span class="gm-title2">^ Return to all game mechanics ^</span>
+                </a>
             </div>
         </section>
         <!-- Act VI -->
