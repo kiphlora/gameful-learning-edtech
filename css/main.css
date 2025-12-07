@@ -435,6 +435,10 @@ a.gm-title-anchor-back-to-all-gms:hover {
     line-height: 1.4;
 } */
 
+/* 
+Inspiration for the reflection box style came from:
+https://codepen.io/steinvc/pen/nOPLgv
+*/
 .reflection-box {
 	overflow:hidden;
     width: 82%;
@@ -513,10 +517,12 @@ figcaption {
     transition: transform 0.1s ease;
     color: white;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .gm-card:hover {
-    background-color: #185972;
+    background-color: #0d3e52;
+    /* background-color: #dddddd; */
     transform: translateY(-2px);
     transition: 
         transform 0.2s ease;
@@ -620,3 +626,112 @@ figcaption {
     display: block;
 }
 
+.act-V-gm-section {
+    display: none;
+}
+
+.act-V-gm-section.active {
+    display: block;   
+}
+
+.gm-card.active {
+    background-color: #185972;
+}
+
+/* #notification-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333333dd;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    font-size: 1rem;
+    z-index: 1000;
+    display: none;
+}
+
+.notification {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    opacity: 0;
+    transform: translateX(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    font-size: 0.9rem;
+}
+
+.notification.show {
+    opacity: 1;
+    transform: translatex(0);
+} */
+
+.tags {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.tags span {
+    padding: 2px 10px;
+    margin: 0;
+}
+
+.mark-progress {
+    text-align: right;
+    display: block;
+}
+
+.mark-progress img{
+    margin-top: 10px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.mark-progress img:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+.data-buttons-container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}   
+
+#clear-data {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #aa3333;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#clear-data:hover {
+    background-color: #aa3333dd;
+}
+
+#download-data {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #008362;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#download-data:hover {
+    background-color: #008362dd;
+}
