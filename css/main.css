@@ -1,14 +1,16 @@
-
+/* 
+CSS Stylesheet for Gameful Learning Explorable Project for CS6460 - Educational Technology at Georgia Tech
+Fall 2025
+Author: Brett Moran
+*/
 
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background: 
         linear-gradient(0.25turn, #52a7cc, #3c7f9c);
-        /* url(https://static.tumblr.com/maopbtg/a5emgtoju/inflicted.png) repeat; */
     max-width: 800px;
     margin: 0 auto;
     line-height: 1.6;
-    /* background-size: 5px 5px; */
 }
 p {
     font-size: 1rem;
@@ -30,7 +32,6 @@ header {
     background: 
         linear-gradient(0.25turn, #ffed4a, #3c7f9c),
         url(https://static.tumblr.com/maopbtg/a5emgtoju/inflicted.png) repeat;
-    /* background: linear-gradient(0.25turn, #ffed4a, #a79600); */
     padding: 1rem 2rem;
     margin: 1rem;
     border-radius: 60px 10px;
@@ -55,63 +56,6 @@ header {
     font-size: 1rem;
 }
 
-table {
-    table-layout: fixed;
-    width: 90%;
-    margin: 10px auto;
-    border-collapse: collapse;
-}
-
-th, td {
-    padding: 0.6em;
-}
-
-tbody > tr {
-    text-align: right;
-}
-
-.pill {
-    color: #ffffff;
-    border: 3px solid #f5efb5;
-}
-table tbody .pill {
-    background-color: #11242c;
-    border-radius: 100px;
-    text-align: center;
-}
-
-table thead .pill {
-    background-color: #185972;
-    border-radius: 100px;
-    text-align: center;
-}
-
-
-/* New way, where the cells appear as is */
-table td {
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    background-color: #a7960022;
-    border: 3px solid #f5efb5;
-    border-radius: 100px;
-    /* cursor: pointer; */
-}
-
-/* table td:hover {
-    background-color: #a7960055;
-    transition:
-        background-color 0.1s;
-} */
-
-td.checked {
-    background-color: #c5b100;
-    background-image: url('../assets/icons/checkbox-icon.svg');
-    background-size: 20%;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
 hr {
     height: 1px;
     margin: 2rem;
@@ -123,24 +67,13 @@ footer {
     background: 
         linear-gradient(0.25turn, #ffed4a, #3c7f9c),
         url(https://static.tumblr.com/maopbtg/a5emgtoju/inflicted.png) repeat;
-    /* background: linear-gradient(0.25turn, #ffed4a, #a79600); */
     padding: 1rem 2rem;
     margin: 1rem;
     border-radius: 60px 10px;
-    /* box-shadow: 20px -10px #000000; */
     box-shadow: 5px 5px 1px 1px #000;
     line-height: 1.2;
 }
 
-/* Game Mechanics section */
-/* .gm-box {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 15px 0 15px 0;
-    align-items: center;
-    justify-content: center;
-} */
 
 .gm-choice-box {
     padding: 5px 0 5px 0;
@@ -154,7 +87,6 @@ footer {
     
 }
 .gm-anchor {
-    /* width: 100%; */
     margin: 10px 5px;
 }
 .gm-span {
@@ -184,7 +116,6 @@ footer {
 }
 
 .gm-card-box {
-    /* border: 1px solid #a79600; */
     border-left: 5px solid #a79600;
     background-color: #97937122;
     border-radius: 10px;
@@ -199,7 +130,6 @@ footer {
 /* .gm-tab-bar is the overall bar containing the tab buttons */
 .gm-tab-bar {
     display: flex;
-    /* margin: 10px; */
     margin-top: 10px;
 }
 
@@ -217,7 +147,6 @@ footer {
 }
 
 .gm-tab-bar button:hover {
-    /* border-bottom: 3px solid #52a7cc; */
     background-color: #dddddd;
     transform: translateY(-2px);
     transition: transform 0.3s ease;
@@ -225,11 +154,8 @@ footer {
 
 .gm-tab {
     border-radius: 10px;
-    /* padding: 10px 30px 10px 30px; */
     padding: 10px 0px 10px 0px;
     display: none;
-    /* background-color: #e4dc99; */
-    /* border-left: 5px solid #a79600; */
 }
 
 /* .gm-tab is the content within the tab */
@@ -239,8 +165,6 @@ footer {
 }
 
 /* .gm-tab-option is the tab button itself */
-
-
 .gm-tab-option.active {
     background-color: #e0ca03;
     border: 1px solid #52a7cc;
@@ -254,7 +178,6 @@ footer {
 
 .gm-intro {
     border-radius: 10px;
-    /* padding: 10px 20px 20px 20px; */
     padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
@@ -264,7 +187,6 @@ footer {
 
 .gm-reflection {
     border-radius: 10px;
-    /* padding: 10px 20px 20px 20px; */
     padding: 20px;
     margin: 10px 0px;
     background-color: #00836233;
@@ -273,7 +195,6 @@ footer {
 
 .gm-recipe {
     border-radius: 10px;
-    /* padding: 10px 20px 20px 20px; */
     padding: 20px;
     background-color: #003c8a33;
     border-left: 5px solid #003c8a;
@@ -282,7 +203,6 @@ footer {
 
 .gm-meaningful {
     border-radius: 10px;
-    /* padding: 10px 20px 20px 20px; */
     padding: 20px;
     margin: 10px 0px;
     background-color: #d8a60033;
@@ -291,7 +211,6 @@ footer {
 
 .gm-shallow {
     border-radius: 10px;
-    /* padding: 10px 20px 20px 20px; */
     padding: 20px;
     margin: 10px 0px;
     background-color: #49008d33;
@@ -306,23 +225,11 @@ footer {
 
 .info-callout {
     border-radius: 10px;
-    /* padding: 10px 20px 20px 20px; */
     padding: 20px;
     margin: 10px 0px;
     background-color: #00000022;
     border-left: 5px solid #000000;
 }
-
-/* .gm-title { */
-    /* text-decoration: wavy;
-    text-decoration-line: underline;
-    text-decoration-thickness: 2px;
-    text-decoration-color: #3c7b96; */
-    /* background-color: #11242c;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 10px;
-} */
 
 a.gm-title-anchor-back-to-all-gms {
     display: inline-block;
@@ -337,7 +244,6 @@ a.gm-title-anchor-back-to-all-gms {
 a.gm-title-anchor-back-to-all-gms:hover {
     background-color: #185972;
     transform: translateY(-2px);
-    /* box-shadow: 0 4px 8px rgba(0,0,0,0.3); */
     transition: 
         transform 0.2s ease;
     
@@ -361,14 +267,6 @@ a.gm-title-anchor-back-to-all-gms:hover {
     border-radius: 10px;
     display: inline-block;
 }
-
-/* .gm-title2 {
-    background-color: #11242c66;
-    color: white;
-    padding: 4px 10px;
-    border-radius: 10px;
-    display: inline-block;
-} */
 
 #act-V-gm-links {
     display: flex;
@@ -441,13 +339,7 @@ a.gm-title-anchor-back-to-all-gms:hover {
 
 .reflection-area {
     margin: 20px;
-    /* padding: 16px; */
-    /* border: 2px solid #d4d4d4; */
     border-radius: 10px;
-    /* background: #f9f9ff; */
-    /* background-image: */
-        /* url(https://static.tumblr.com/maopbtg/E9Bmgtoht/lines.png),  */
-        /* url(https://static.tumblr.com/maopbtg/nBUmgtogx/paper.png); */
     max-width: 100%;
 }
 
@@ -456,20 +348,6 @@ a.gm-title-anchor-back-to-all-gms:hover {
     font-size: 1.1rem;
 }
 
-/* #gm-points-autonomy-reflection-box {
-    width: 100%;
-    min-height: 80px;
-    margin-top: 8px;
-    padding: 12px;
-    font-size: 1rem;
-    border-radius: 8px;
-    border: 1px solid #aaa;
-    box-sizing: border-box;
-    resize: vertical;
-    overflow-y: hidden;
-    background: #ffffff;
-    line-height: 1.4;
-} */
 
 /* 
 Inspiration and some of the code for the reflection box style came from:
@@ -481,9 +359,7 @@ https://codepen.io/steinvc/pen/nOPLgv
     width: 82%;
 	background-color:#FFF;
 	color:#222;
-	/* font-family:Courier, monospace; */
 	font-weight:normal;
-	/* font-size:24px; */
     font-size: 1rem;
 	resize:none;
 	line-height:30px;
@@ -498,10 +374,6 @@ https://codepen.io/steinvc/pen/nOPLgv
 	border-radius:12px;
     border: none;
     background-size: 100% 30px;
-	/* -webkit-box-shadow: 0px 2px 14px #000; */
-	/* box-shadow: 0px 2px 14px #000; */
-	/* border-top:1px solid #FFF; */
-	/* border-bottom:1px solid #FFF; */
 }
 
 
@@ -519,7 +391,6 @@ figcaption {
     display: table-caption;
     caption-side: bottom;
     text-align: center;
-    /* margin-right: 15px; */
     font-size: 0.85rem;
     font-style: italic;
     font-weight: bold;
@@ -538,15 +409,12 @@ figcaption {
     padding: 10px;
     border-radius: 50px 10px;
     margin: 0;
-    /* background-color: #04080a */
 }
 
 .gm-card {
     border: 2px solid transparent;
     background-color: #003044;
-    /* background-color: #11242c; */
     box-shadow: 5px 5px 10px 0px #333;
-    /* background-color: #22495a; */
     border-radius: 40px 10px;
     padding: 20px 10px;
     margin: 8px;
@@ -560,7 +428,6 @@ figcaption {
 
 .gm-card:hover {
     background-color: #0d3e52;
-    /* background-color: #dddddd; */
     transform: translateY(-2px);
     transition: 
         transform 0.2s ease;
@@ -673,10 +540,6 @@ figcaption {
 }
 
 .gm-card.active {
-    /* border: 2px solid #c5b100; */
-    /* border-top: 2px solid transparent; */
-    /* border-left: 2px solid transparent; */
-    /* background-color: #003044; */
     background-color: #11242c;
     box-shadow: none;
     transform: translateY(-2px);
@@ -684,36 +547,6 @@ figcaption {
         transform 0.2s ease;
 }
 
-
-/* #notification-box {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #333333dd;
-    color: white;
-    padding: 15px 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    font-size: 1rem;
-    z-index: 1000;
-    display: none;
-}
-
-.notification {
-    background-color: #333333;
-    color: #ffffff;
-    padding: 10px 15px;
-    border-radius: 8px;
-    opacity: 0;
-    transform: translateX(20px);
-    transition: opacity 0.4s ease, transform 0.4s ease;
-    font-size: 0.9rem;
-}
-
-.notification.show {
-    opacity: 1;
-    transform: translatex(0);
-} */
 
 .tags {
     display: flex;

@@ -1,3 +1,9 @@
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
+// JS for Gameful Learning Explorable Project for CS6460 - Educational Technology at Georgia Tech
+// Fall 2025
+// Author: Brett Moran
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 // dictionary for housing progression stats and reflection info
 let badgeProgress = {
     'points-autonomy-reading': {
@@ -266,6 +272,7 @@ let badgeProgress = {
     }
 }
 
+// dictionary for housing big badge progress
 let bigBadgeProgress = {
     'points': {
         autonomy: false,
@@ -309,6 +316,7 @@ let bigBadgeProgress = {
     }
 }
 
+// image paths for mini badges
 const miniBadgeImgs = {
     hidden: "/assets/badges/gm-badge-hidden.png",
     partial: "/assets/badges/gm-checkbox-yellow.png",
@@ -322,6 +330,7 @@ const miniBadgeImgs = {
     sectionHidden: "/assets/badges/gm-checkbox-can-check.png"
 }
 
+// image paths for large badges
 const largeBadgeImgs = {
     hidden: "/assets/badges/gm-badge-hidden.png",
     points: "/assets/badges/gm-points-badge-active.png",
@@ -334,6 +343,7 @@ const largeBadgeImgs = {
     roleplay: "/assets/badges/gm-roleplay-badge-active.png"
 }
 
+// function to clear all saved data
 function clearData() {
     const confirmDelete = window.confirm("Warning: This will permanently delete all saved progress and reflections. Continue?");
     if (!confirmDelete) return;
@@ -377,6 +387,7 @@ function clearData() {
     updateMiniBadgeProgress();
 }
 
+// function to download reflections as csv file
 function downloadData() {
     const confirmDownload = window.confirm("You are about to download a CSV file containing your Reflections. Continue?");
     if (!confirmDownload) return;
@@ -402,13 +413,13 @@ function downloadData() {
         }
     }
 
-    ///////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     // Note: The remainder of the code was inspired and
     //       modified from the follwing sites:
     //       https://stackoverflow.com/questions/14964035/how-to-export-javascript-array-info-to-csv-on-client-side
     //       https://stackoverflow.com/questions/56154046/downloading-blob-with-type-text-csv-strips-unicode-bom
     //       https://stackoverflow.com/questions/46637955/write-a-string-containing-commas-and-double-quotes-to-csv
-    ///////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     const csvData = rows.map(row => row.map(col => `"${col.replace(/"/g,'""')}"`).join(",")).join("\n");
 
     const blob = new Blob([csvData], { type: "text/csv;charset=utf-8;" });
@@ -421,15 +432,16 @@ function downloadData() {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-    ///////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     // Note: End of code inspired and modified from the 
     //       following sites:
     //       https://stackoverflow.com/questions/14964035/how-to-export-javascript-array-info-to-csv-on-client-side
     //       https://stackoverflow.com/questions/56154046/downloading-blob-with-type-text-csv-strips-unicode-bom
     //       https://stackoverflow.com/questions/46637955/write-a-string-containing-commas-and-double-quotes-to-csv
-    ///////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 }
 
+// function to toggle badge progress when section circles are clicked
 function toggleBadge(event, badgeID, badgeType) {
     // event is the "meaningful", "shallow" or "reflection" section's
     // circle that was clicked to "mark as completed"
@@ -453,6 +465,7 @@ function toggleBadge(event, badgeID, badgeType) {
         badgeProgress[badgeKey].reflection = !badgeProgress[badgeKey].reflection;
     }
 
+    // 3. Update the visual circle/checkbox
     toggleCompleteElement.classList.toggle("completed");
     if (toggleCompleteElement.id.includes('meaningful')) {
         toggleCompleteElement.querySelector("img").src = toggleCompleteElement.classList.contains("completed") ? miniBadgeImgs.sectionMeaningfulComplete : miniBadgeImgs.sectionMeaningfulHidden;
@@ -498,6 +511,7 @@ function gmsdtTabSwitch(event, gmTabClass, gmContentClass, gmContentID) {
     ////////////////////////////////////////////////////
 }
 
+// Function for switching between game mechanic sections
 function gmSectionSwitch(event, sectionID) {
     ////////////////////////////////////////////////////
     // Code borrowed and modified from:
@@ -537,6 +551,8 @@ function autoResize(textarea) {
 // https://stackoverflow.com/questions/454202/creating-a-textarea-with-auto-resize
 ///////////////////////////////////////////////////////////////////
 
+
+// function to resize reflection text areas and store data in localStorage
 function resizeTextArea(event) {
     const box = event.currentTarget;
     autoResize(box);
@@ -551,12 +567,6 @@ function resizeTextArea(event) {
 
     updateMiniBadgeProgress();
 }
-
-// add event listeners to all reflection boxes for
-// autonatic resizing and storing data in localStorage
-document.querySelectorAll(".reflection-box").forEach(elem => {
-    elem.addEventListener("input", resizeTextArea);
-});
 
 
 // this function updates the card badge progress based on stored data
@@ -708,5 +718,10 @@ function loadData() {
 }
 
 // initial code - load data and update badges
+// add event listeners to all reflection boxes for
+// autonatic resizing and storing data in localStorage
+document.querySelectorAll(".reflection-box").forEach(elem => {
+    elem.addEventListener("input", resizeTextArea);
+});
 loadData();
 updateMiniBadgeProgress();
